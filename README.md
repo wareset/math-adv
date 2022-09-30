@@ -3,7 +3,7 @@ Math with all the necessary polyfills and additional functions
 
 ## What for?
 
-In older browsers, methods such as "imul", "hypot", "fround", etc., may not exist. There are polyphiles in this library so that everything works even in the "IE".
+In older browsers, methods such as "imul", "hypot", "fround", etc, may not exist. There are polyfills in this library so that everything works even in the "IE".
 
 Also, some methods are slightly improved, they will be described further.
 
