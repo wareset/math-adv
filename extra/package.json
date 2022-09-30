@@ -1,0 +1,19 @@
+{
+  "files": [
+    "ceil",
+    "clamp",
+    "distance",
+    "floor",
+    "magnitude",
+    "mean",
+    "multiply",
+    "random",
+    "randomAndCeil",
+    "randomAndFloor",
+    "randomAndRound",
+    "round",
+    "sum",
+    "toDegrees",
+    "toRadians"
+  ]
+}
