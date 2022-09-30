@@ -1,0 +1,44 @@
+{
+  "name": "math-adv",
+  "version": "1.0.0",
+  "description": "Math with all the necessary polyfills and additional functions",
+  "keywords": [
+    "safe",
+    "extra",
+    "math",
+    "random",
+    "clamp"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/wareset/math-adv",
+  "bugs": {
+    "url": "https://github.com/wareset/math-adv/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wareset/math-adv.git"
+  },
+  "author": "rease <cftcview@gmail.com>",
+  "main": "index",
+  "module": "index.mjs",
+  "types": "index.d.ts",
+  "files": [
+    "README.md",
+    "base",
+    "extra",
+    "index.d.ts",
+    "index.js",
+    "index.mjs",
+    "lib",
+    "types"
+  ],
+  "scripts": {
+    "dester": "dester ./src ./ -t types",
+    "build": "npm run -s dester -- -r -m",
+    "dev": "npm run -s dester -- -w --no-r -m"
+  },
+  "devDependencies": {
+    "dester": "0.x",
+    "typescript": "4.x"
+  }
+}
