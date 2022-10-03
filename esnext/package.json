@@ -1,0 +1,11 @@
+{
+  "files": [
+    "DEG_PER_RAD",
+    "RAD_PER_DEG",
+    "clamp",
+    "degrees",
+    "fscale",
+    "radians",
+    "scale"
+  ]
+}

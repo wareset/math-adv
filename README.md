@@ -49,9 +49,9 @@ randomAndFloor(0, 4) // => must be 0, 1, 2 or 3
 randomAndRound(0, 4) // => must be 0, 1, 2, 3 or 4
 
 // Convert to degrees and to radians:
-import { toDegrees, toRadians } from 'math-adv';
-toDegrees(radians)
-toRadians(degrees)
+import { degrees, radians } from 'math-adv';
+degrees(180)
+radians(1.5)
 
 // Other:
 import { 

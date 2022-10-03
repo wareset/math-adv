@@ -3,10 +3,10 @@
 dester builds:
 extra/ceil.ts
 */
-import o from "../../base/pow";
+import m from "../../ecma/pow";
 
-import r from "../../base/ceil";
+import o from "../../ecma/ceil";
 
-var a = (a, e) => e ? r(a * (e = o(10, e))) / e : r(a);
+var r = (r, a) => a ? o(r * (a = m(10, a))) / a : o(r);
 
-export { a as default };
+export { r as default };

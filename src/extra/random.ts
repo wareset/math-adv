@@ -1,4 +1,4 @@
-import random from '../base/random'
+import random from '../ecma/random'
 
 const __random__ = (): number => random() || __random__()
 const randomBetween = (

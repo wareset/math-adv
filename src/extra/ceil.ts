@@ -1,5 +1,5 @@
-import pow from '../base/pow'
-import ceil from '../base/ceil'
+import pow from '../ecma/pow'
+import ceil from '../ecma/ceil'
 const ceilTo = (n: number, precision?: number): number =>
   !precision
     ? ceil(n)

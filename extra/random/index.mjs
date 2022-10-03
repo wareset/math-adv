@@ -3,8 +3,8 @@
 dester builds:
 extra/random.ts
 */
-import a from "../../base/random";
+import a from "../../ecma/random";
 
-var r = () => a() || r(), o = (a = 0, o = a + 1) => r() * (o - a) + a;
+var r = () => a() || r(), m = (a = 0, m = a + 1) => r() * (m - a) + a;
 
-export { o as default };
+export { m as default };

@@ -1,5 +1,5 @@
-import pow from '../base/pow'
-import round from '../base/round'
+import pow from '../ecma/pow'
+import round from '../ecma/round'
 const roundTo = (n: number, precision?: number): number =>
   !precision
     ? round(n)

@@ -24,7 +24,9 @@
   "types": "index.d.ts",
   "files": [
     "README.md",
-    "base",
+    "adv",
+    "ecma",
+    "esnext",
     "extra",
     "index.d.ts",
     "index.js",

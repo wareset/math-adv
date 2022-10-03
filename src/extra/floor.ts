@@ -1,5 +1,5 @@
-import pow from '../base/pow'
-import floor from '../base/floor'
+import pow from '../ecma/pow'
+import floor from '../ecma/floor'
 const floorTo = (n: number, precision?: number): number =>
   !precision
     ? floor(n)

@@ -7,7 +7,7 @@ Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-var e = require("../../base/pow"), t = require("../../base/ceil");
+var e = require("../../ecma/pow"), t = require("../../ecma/ceil");
 
 function r(e) {
     return e && "object" == typeof e && "default" in e ? e : {

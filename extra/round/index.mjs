@@ -3,10 +3,10 @@
 dester builds:
 extra/round.ts
 */
-import o from "../../base/pow";
+import o from "../../ecma/pow";
 
-import r from "../../base/round";
+import r from "../../ecma/round";
 
-var a = (a, e) => e ? r(a * (e = o(10, e))) / e : r(a);
+var m = (m, a) => a ? r(m * (a = o(10, a))) / a : r(m);
 
-export { a as default };
+export { m as default };
