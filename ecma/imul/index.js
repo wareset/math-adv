@@ -3,21 +3,19 @@
 dester builds:
 ecma/imul.ts
 */
-Object.defineProperty(exports, "__esModule", {
-    value: !0
-});
-
-var e = require("../../lib/Math");
-
-function t(e) {
+function e(e) {
     return e && "object" == typeof e && "default" in e ? e : {
         default: e
     };
 }
 
-var r = t(e).default.imul || ((e, t) => {
-    var r = (e = +e) >>> 16 & 65535, u = 65535 & e, a = (t = +t) >>> 16 & 65535, l = 65535 & t;
-    return u * l + (r * l + u * a << 16 >>> 0) | 0;
+Object.defineProperty(exports, "__esModule", {
+    value: !0
 });
 
-exports.default = r;
+var t = e(require("../../lib/Math")).default.imul || ((e, t) => {
+    var r = 65535, u = r & (e = +e), a = r & (t = +t);
+    return 0 | u * a + ((r & e >>> 16) * a + u * (r & t >>> 16) << 16 >>> 0);
+});
+
+exports.default = t;

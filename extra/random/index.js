@@ -13,6 +13,6 @@ Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-var t = e(require("../../ecma/random")), r = () => t.default() || r();
+var t = e(require("../../ecma/random")), o = () => t.default() || o();
 
-exports.default = (e = 0, t = e + 1) => r() * (t - e) + e;
+exports.default = (e, t) => void 0 === e ? o() : void 0 === t ? o() * e : o() * (t - e) + e;

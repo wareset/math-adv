@@ -3,16 +3,18 @@
 dester builds:
 ecma/trunc.ts
 */
-function e(e) {
+Object.defineProperty(exports, "__esModule", {
+    value: !0
+});
+
+var e = require("../../lib/Math"), r = require("../ceil"), t = require("../floor");
+
+function u(e) {
     return e && "object" == typeof e && "default" in e ? e : {
         default: e
     };
 }
 
-Object.defineProperty(exports, "__esModule", {
-    value: !0
-});
+var l = u(e), a = u(r), f = u(t), o = l.default.trunc || (e => (e > 0 ? f.default : a.default)(e));
 
-var t = e(require("../../lib/Math")).default.trunc || (e => (e = +e) - e % 1 || (e < 0 ? -0 : 0 === e ? e : 0));
-
-exports.default = t;
+exports.default = o;

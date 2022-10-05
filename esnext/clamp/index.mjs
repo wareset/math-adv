@@ -3,10 +3,6 @@
 dester builds:
 esnext/clamp.ts
 */
-import m from "../../ecma/max";
+var a = (a, e, r) => (a = +a) < e ? e : a > r ? r : a;
 
-import a from "../../ecma/min";
-
-var r = (r, o, e) => a(e, m(o, r));
-
-export { r as default };
+export { a as default };

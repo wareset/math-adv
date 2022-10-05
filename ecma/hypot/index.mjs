@@ -5,8 +5,10 @@ ecma/hypot.ts
 */
 import r from "../../lib/Math";
 
-import t from "../sqrt";
+import t from "../../lib/isFinite";
 
-var o = r.hypot || ((...r) => t(r.reduce(((r, t) => r + t * t), 0)));
+import i from "../sqrt";
+
+var o = r.hypot || ((...r) => i(r.reduce(((r, i) => t(r) || r != r ? r + i * i : r), 0)));
 
 export { o as default };

@@ -5,6 +5,6 @@ ecma/sign.ts
 */
 import a from "../../lib/Math";
 
-var r = a.sign || (a => 0 == (a = +a) || a != a ? a : a > 0 ? 1 : -1);
+var r = a.sign || (a => (a = +a) > 0 ? 1 : a < 0 ? -1 : a);
 
 export { r as default };

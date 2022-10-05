@@ -1,6 +1,7 @@
 {
   "files": [
     "Infinity",
-    "Math"
+    "Math",
+    "isFinite"
   ]
 }

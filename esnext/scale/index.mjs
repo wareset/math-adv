@@ -3,8 +3,6 @@
 dester builds:
 esnext/scale.ts
 */
-import i from "../../lib/Infinity";
+var a = (a, e, r, t, d) => (t = +t) + ((a = +a) - e) * ((d = +d) - t) / (r - e);
 
-var r = (r, t, a, f, o) => (r = +r) === i || r === -i ? r : (f = +f) + (r - t) * ((o = +o) - f) / (a - t);
-
-export { r as default };
+export { a as default };

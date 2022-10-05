@@ -5,10 +5,12 @@ ecma/asinh.ts
 */
 import r from "../../lib/Math";
 
-import i from "../log";
+import i from "../../lib/isFinite";
 
-import o from "../sqrt";
+import o from "../log";
 
-var t = r.asinh || (r => isFinite(r = +r) && 0 !== r ? r < 0 ? -t(-r) : i(r + o(r * r + 1)) : r);
+import t from "../sqrt";
 
-export { t as default };
+var m = r.asinh || (r => i(r = +r) && 0 !== r ? r < 0 ? -m(-r) : o(r + t(r * r + 1)) : r);
+
+export { m as default };

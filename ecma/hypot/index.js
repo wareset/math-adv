@@ -7,14 +7,14 @@ Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-var e = require("../../lib/Math"), t = require("../sqrt");
+var e = require("../../lib/Math"), t = require("../../lib/isFinite"), r = require("../sqrt");
 
-function r(e) {
+function u(e) {
     return e && "object" == typeof e && "default" in e ? e : {
         default: e
     };
 }
 
-var u = r(e), a = r(t), d = u.default.hypot || ((...e) => a.default(e.reduce(((e, t) => e + t * t), 0)));
+var i = u(e), a = u(t), l = u(r), d = i.default.hypot || ((...e) => l.default(e.reduce(((e, t) => a.default(e) || e != e ? e + t * t : e), 0)));
 
 exports.default = d;

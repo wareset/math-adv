@@ -5,6 +5,10 @@ ecma/trunc.ts
 */
 import r from "../../lib/Math";
 
-var t = r.trunc || (r => (r = +r) - r % 1 || (r < 0 ? -0 : 0 === r ? r : 0));
+import o from "../ceil";
 
-export { t as default };
+import t from "../floor";
+
+var m = r.trunc || (r => (r > 0 ? t : o)(r));
+
+export { m as default };
