@@ -1,7 +1,9 @@
 {
   "files": [
+    "div",
     "mean",
-    "multiply",
+    "mul",
+    "sub",
     "sum"
   ]
 }

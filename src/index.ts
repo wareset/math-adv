@@ -13,17 +13,19 @@ export { default as scale } from './esnext/scale'
 /*
 adv
 */
+export { default as div } from './adv/div'
 export { default as mean } from './adv/mean'
-export { default as multiply } from './adv/multiply'
+export { default as mul } from './adv/mul'
+export { default as sub } from './adv/sub'
 export { default as sum } from './adv/sum'
 
 /*
 extra
 */
-export { default as ceil } from './extra/ceil'
-export { default as floor } from './extra/floor'
-export { default as random } from './extra/random'
-export { default as round } from './extra/round'
+export { default as ceilExtra } from './extra/ceil'
+export { default as floorExtra } from './extra/floor'
+export { default as randomExtra } from './extra/random'
+export { default as roundExtra } from './extra/round'
 
 /*
 ecma
@@ -39,7 +41,7 @@ export { default as atan2 } from './ecma/atan2'
 export { default as atanh } from './ecma/atanh'
 
 export { default as cbrt } from './ecma/cbrt'
-// export { default as ceil } from './ecma/ceil'
+export { default as ceil } from './ecma/ceil'
 export { default as clz32 } from './ecma/clz32'
 export { default as cos } from './ecma/cos'
 export { default as cosh } from './ecma/cosh'
@@ -48,7 +50,7 @@ export { default as exp } from './ecma/exp'
 export { default as expm1 } from './ecma/expm1'
 export { default as E } from './ecma/E'
 
-// export { default as floor } from './ecma/floor'
+export { default as floor } from './ecma/floor'
 export { default as fround } from './ecma/fround'
 
 export { default as hypot } from './ecma/hypot'
@@ -70,8 +72,8 @@ export { default as min } from './ecma/min'
 export { default as pow } from './ecma/pow'
 export { default as PI } from './ecma/PI'
 
-// export { default as random } from './ecma/random'
-// export { default as round } from './ecma/round'
+export { default as random } from './ecma/random'
+export { default as round } from './ecma/round'
 
 export { default as sign } from './ecma/sign'
 export { default as sin } from './ecma/sin'

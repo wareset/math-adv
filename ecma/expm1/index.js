@@ -15,6 +15,6 @@ function r(e) {
     };
 }
 
-var u = r(e), a = r(t), f = u.default.expm1 || (e => 0 == (e = +e) ? e : e > -1e-6 && e < 1e-6 ? e + e * e / 2 : a.default(e) - 1);
+var u = r(e), a = r(t), f = u.default.expm1 || (e => (e = +e) ? e > -1e-6 && e < 1e-6 ? e + e * e / 2 : a.default(e) - 1 : e);
 
 exports.default = f;

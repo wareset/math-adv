@@ -15,6 +15,6 @@ function r(e) {
     };
 }
 
-var a = r(e), u = r(t), l = a.default.atanh || (e => 0 == (e = +e) ? e : u.default((1 + e) / (1 - e)) / 2);
+var a = r(e), u = r(t), l = a.default.atanh || (e => (e = +e) ? u.default((1 + e) / (1 - e)) / 2 : e);
 
 exports.default = l;

@@ -1,3 +1,6 @@
-const sum = (...n: number[]): number =>
-  n.reduce((a, c) => a + c, 0)
+const sum = (...n: number[]): number => {
+  let res = +n[0]
+  for (let i = 1, l = n.length; i < l; i++) res += +n[i]
+  return res
+}
 export default sum
