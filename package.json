@@ -1,5 +1,5 @@
 {
-  "name": "math-adv",
+  "name": "math-safe",
   "version": "1.0.0",
   "description": "Math with all the necessary polyfills and additional functions",
   "keywords": [
@@ -10,13 +10,13 @@
     "clamp"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/wareset/math-adv",
+  "homepage": "https://github.com/wareset/math-safe",
   "bugs": {
-    "url": "https://github.com/wareset/math-adv/issues"
+    "url": "https://github.com/wareset/math-safe/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wareset/math-adv.git"
+    "url": "git+https://github.com/wareset/math-safe.git"
   },
   "author": "rease <cftcview@gmail.com>",
   "main": "index",

@@ -1,4 +1,4 @@
-# math-adv
+# math-safe
 Math with all the necessary polyfills and additional functions
 
 ### What for?
@@ -14,23 +14,23 @@ A few more additional methods have been added and more may be added.
 ## ecma methods
 All standard `js` methods like `Math`, but some contain polyfills:
 ```js
-import { round, random, abs, sign... } from 'math-adv';
+import { round, random, abs, sign... } from 'math-safe';
 // or
-import * as MathSafe from 'math-adv'
+import * as MathSafe from 'math-safe'
 // or
-import random from 'math-adv/ecma/random'
+import random from 'math-safe/ecma/random'
 // or
-const random = require('math-adv').random
+const random = require('math-safe').random
 // or
-const random = require('math-adv/ecma/random').default
+const random = require('math-safe/ecma/random').default
 ```
 
 ## extra methods
 There are 4 methods in total:
 ```js
-import { randomExtra, ceilExtra, floorExtra, roundExtra } from 'math-adv';
+import { randomExtra, ceilExtra, floorExtra, roundExtra } from 'math-safe';
 // or
-import randomExtra from 'math-adv/extra/random'
+import randomExtra from 'math-safe/extra/random'
 
 // random
 // The method "Math.random" can return 0.
@@ -59,9 +59,9 @@ See proposal [https://rwaldron.github.io/proposal-math-extensions](https://rwald
 There are 5 methods and 2 constants in total:
 ```js
 // Convert to degrees and to radians:
-import { degrees, radians, DEG_PER_RAD, RAD_PER_DEG } from 'math-adv';
+import { degrees, radians, DEG_PER_RAD, RAD_PER_DEG } from 'math-safe';
 // or
-import degrees from 'math-adv/esnext/degrees'
+import degrees from 'math-safe/esnext/degrees'
 
 DEG_PER_RAD // Math.PI / 180
 RAD_PER_DEG // 180 / Math.PI
@@ -70,7 +70,7 @@ degrees(1.5) // => 1.5 * RAD_PER_DEG
 radians(180) // => 180 * DEG_PER_RAD
 
 // Other:
-import { clamp, scale, fscale} from 'math-adv';
+import { clamp, scale, fscale} from 'math-safe';
 
 // returns a "value" if it is between "min" and "max"
 // otherwise it will return "min" or "max"
@@ -80,9 +80,9 @@ clamp(value, min, max)
 ## adv. methods
 There are 5:
 ```js
-import { mean, mul, div, sum, sub } from 'math-adv';
+import { mean, mul, div, sum, sub } from 'math-safe';
 // or
-import mean from 'math-adv/adv/mean'
+import mean from 'math-safe/adv/mean'
 
 // returns the average value of all arguments
 mean(1, 2, 3, 4) // => 2.5
