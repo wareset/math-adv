@@ -8,6 +8,6 @@ Object.defineProperty(exports, "__esModule", {
 });
 
 exports.default = (...e) => {
-    for (var r = +e[0], t = e.length; 1 < t; ) r *= +e[1];
+    for (var r = +e[0], t = 1, o = e.length; t < o; t++) r *= +e[t];
     return r;
 };
