@@ -15,11 +15,12 @@ function f(e) {
     };
 }
 
-var l, d, i, n, o, b, p = f(e), q = f(r), s = f(t), v = f(u), c = f(a), y = p.default.fround || (l = v.default(2, -52), 
-d = v.default(2, -23), i = 1 + d / l, n = v.default(2, 127) * (2 - d), o = v.default(2, -126), 
-b = 1 / l, e => {
-    var r = s.default(e = +e), t = c.default(e);
-    return r < o ? (r / o / d + b - b) * t * o * d : (e = r * i) > n || e != e ? t * q.default : t * e;
-});
+var i = f(e), l = f(r), d = f(t), n = f(u), o = f(a), b = i.default.fround || ((e, r, t, u) => {
+    var a = r(2, -52), f = r(2, -23), i = r(2, 127) * (2 - f), l = r(2, -126);
+    return r => {
+        var d, n, o = e(r = +r), b = t(r);
+        return o < l ? b * (e => e + 1 / a - 1 / a)(o / l / f) * l * f : (n = (d = (1 + f / a) * o) - (d - o)) > i || n != n ? b * u : b * n;
+    };
+})(d.default, n.default, o.default, l.default);
 
-exports.default = y;
+exports.default = b;
