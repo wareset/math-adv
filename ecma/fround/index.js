@@ -7,20 +7,21 @@ Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-var e = require("../../lib/Math"), r = require("../../lib/Infinity"), t = require("../abs"), u = require("../pow"), a = require("../sign");
+var e = require("../../lib/Math"), r = require("../../lib/Infinity"), t = require("../pow"), u = require("../sign");
 
-function f(e) {
+function a(e) {
     return e && "object" == typeof e && "default" in e ? e : {
         default: e
     };
 }
 
-var i = f(e), l = f(r), d = f(t), n = f(u), o = f(a), b = i.default.fround || ((e, r, t, u) => {
-    var a = r(2, -52), f = r(2, -23), i = r(2, 127) * (2 - f), l = r(2, -126);
-    return r => {
-        var d, n, o = e(r = +r), b = t(r);
-        return o < l ? b * (e => e + 1 / a - 1 / a)(o / l / f) * l * f : (n = (d = (1 + f / a) * o) - (d - o)) > i || n != n ? b * u : b * n;
+var f = a(e), i = a(r), l = a(t), n = a(u), d = f.default.fround || ((e, r, t) => {
+    var u, a, f, i, l = !1;
+    return n => {
+        l || (l = !0, u = e(2, -52), a = e(2, -23), f = e(2, 127) * (2 - a), i = e(2, -126));
+        var d, o, p = r(n = +n), v = n * p;
+        return v < i ? p * (e => e + 1 / u - 1 / u)(v / i / a) * i * a : (o = (d = (1 + a / u) * v) - (d - v)) > f || o != o ? p * t : p * o;
     };
-})(d.default, n.default, o.default, l.default);
+})(l.default, n.default, i.default);
 
-exports.default = b;
+exports.default = d;

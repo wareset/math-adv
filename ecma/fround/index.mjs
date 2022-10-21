@@ -7,18 +7,17 @@ import r from "../../lib/Math";
 
 import o from "../../lib/Infinity";
 
-import t from "../abs";
+import t from "../pow";
 
-import i from "../pow";
+import i from "../sign";
 
-import m from "../sign";
-
-var f = r.fround || ((r, o, t, i) => {
-    var m = o(2, -52), f = o(2, -23), a = o(2, 127) * (2 - f), p = o(2, -126);
-    return o => {
-        var n, e, u = r(o = +o), b = t(o);
-        return u < p ? b * (r => r + 1 / m - 1 / m)(u / p / f) * p * f : (e = (n = (1 + f / m) * u) - (n - u)) > a || e != e ? b * i : b * e;
+var m = r.fround || ((r, o, t) => {
+    var i, m, f, a, n = !1;
+    return p => {
+        n || (n = !0, i = r(2, -52), m = r(2, -23), f = r(2, 127) * (2 - m), a = r(2, -126));
+        var e, u, l = o(p = +p), v = p * l;
+        return v < a ? l * (r => r + 1 / i - 1 / i)(v / a / m) * a * m : (u = (e = (1 + m / i) * v) - (e - v)) > f || u != u ? l * t : l * u;
     };
-})(t, i, m, o);
+})(t, i, o);
 
-export { f as default };
+export { m as default };
