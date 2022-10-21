@@ -5,12 +5,8 @@ ecma/cosh.ts
 */
 import o from "../../lib/Math";
 
-import r from "../E";
+import r from "../exp";
 
-import m from "../abs";
+var t = o.cosh || (o => (r(o) + r(-o)) / 2);
 
-import t from "../expm1";
-
-var p = o.cosh || (o => ((o = t(m(+o) - 1) + 1) + 1 / (o * r * r)) * (r / 2));
-
-export { p as default };
+export { t as default };
