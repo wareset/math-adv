@@ -27,14 +27,6 @@ const fround = __Math__.fround || ((pow, sign, __Infinity__) => {
       result !== result
         ? $sign * __Infinity__
         : $sign * result
-    // if ($abs < MIN32) {
-    //   return $sign * roundTiesToEven($abs / MIN32 / EPSILON32) * MIN32 * EPSILON32
-    // }
-    // const a = (1 + EPSILON32 / EPSILON) * $abs
-    // const result = a - (a - $abs)
-    // return result > MAX32 || result !== result
-    //   ? $sign * __Infinity__
-    //   : $sign * result
   }
 })(pow, sign, __Infinity__)
 
