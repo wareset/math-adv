@@ -4,6 +4,6 @@ const scale = (
   inHigh: number,
   outLow: number,
   outHigh: number
-): number => (outHigh = +outHigh, outLow = +outLow) +
-  (+x - inLow) * (outHigh - outLow) / (inHigh - inLow)
+): number => (inLow = +inLow, outLow = +outLow,
+(+x - inLow) * (+outHigh - outLow) / (+inHigh - inLow) + outLow)
 export default scale

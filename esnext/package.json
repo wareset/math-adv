@@ -1,10 +1,16 @@
 {
+  "main": "index",
+  "module": "index.mjs",
+  "types": "index.d.ts",
   "files": [
     "DEG_PER_RAD",
     "RAD_PER_DEG",
     "clamp",
     "degrees",
     "fscale",
+    "index.d.ts",
+    "index.js",
+    "index.mjs",
     "radians",
     "scale"
   ]

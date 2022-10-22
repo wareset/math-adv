@@ -1,6 +1,6 @@
 {
   "name": "math-safe",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Math with all the necessary polyfills and additional functions",
   "keywords": [
     "safe",
