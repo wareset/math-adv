@@ -1,6 +1,6 @@
 {
   "name": "math-safe",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "Math with all the necessary polyfills and additional functions",
   "keywords": [
     "safe",
@@ -24,15 +24,15 @@
   "types": "index.d.ts",
   "files": [
     "README.md",
-    "adv",
-    "ecma",
-    "esnext",
-    "extra",
+    "adv/**/*",
+    "ecma/**/*",
+    "esnext/**/*",
+    "extra/**/*",
     "index.d.ts",
     "index.js",
     "index.mjs",
-    "lib",
-    "types"
+    "lib/**/*",
+    "types/**/*"
   ],
   "scripts": {
     "dester": "dester ./src ./ -t types",
