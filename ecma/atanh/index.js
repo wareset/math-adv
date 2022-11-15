@@ -1,20 +1,12 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/atanh.ts
-*/
 Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-var e = require("../../lib/Math"), t = require("../log");
+const e = require("../../_includes/dester-inject-Math.js"), t = require("../log/index.js");
 
-function r(e) {
-    return e && "object" == typeof e && "default" in e ? e : {
-        default: e
-    };
-}
+var r = e.v.atanh || function(e) {
+    return (e = +e) ? t.default((1 + e) / (1 - e)) / 2 : e;
+};
 
-var a = r(e), u = r(t), l = a.default.atanh || (e => (e = +e) ? u.default((1 + e) / (1 - e)) / 2 : e);
-
-exports.default = l;
+exports.default = r;

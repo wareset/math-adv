@@ -1,3 +1,2 @@
-import __Math__ from '../lib/Math'
-const round = __Math__.round
+const round = Math.round
 export default round

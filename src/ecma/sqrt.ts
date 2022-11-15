@@ -1,3 +1,2 @@
-import __Math__ from '../lib/Math'
-const sqrt = __Math__.sqrt
+const sqrt = Math.sqrt
 export default sqrt

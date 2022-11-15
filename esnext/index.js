@@ -1,55 +1,7 @@
 /* eslint-disable */
-/*
-dester builds:
-esnext/index.ts
-*/
-Object.defineProperty(exports, "__esModule", {
-    value: !0
-});
+const e = require("./clamp/index.js"), r = require("./DEG_PER_RAD/index.js"), s = require("./degrees/index.js"), i = require("./fscale/index.js"), d = require("./RAD_PER_DEG/index.js"), a = require("./radians/index.js"), u = require("./scale/index.js");
 
-var e = require("./clamp"), r = require("./DEG_PER_RAD"), t = require("./degrees"), n = require("./fscale"), u = require("./RAD_PER_DEG"), a = require("./radians"), f = require("./scale");
-
-function o(e) {
-    return e && "object" == typeof e && "default" in e ? e : {
-        default: e
-    };
-}
-
-var i = o(e), l = o(r), c = o(t), d = o(n), p = o(u), s = o(a), b = o(f);
-
-Object.defineProperty(exports, "clamp", {
-    enumerable: !0,
-    get: function() {
-        return i.default;
-    }
-}), Object.defineProperty(exports, "DEG_PER_RAD", {
-    enumerable: !0,
-    get: function() {
-        return l.default;
-    }
-}), Object.defineProperty(exports, "degrees", {
-    enumerable: !0,
-    get: function() {
-        return c.default;
-    }
-}), Object.defineProperty(exports, "fscale", {
-    enumerable: !0,
-    get: function() {
-        return d.default;
-    }
-}), Object.defineProperty(exports, "RAD_PER_DEG", {
-    enumerable: !0,
-    get: function() {
-        return p.default;
-    }
-}), Object.defineProperty(exports, "radians", {
-    enumerable: !0,
-    get: function() {
-        return s.default;
-    }
-}), Object.defineProperty(exports, "scale", {
-    enumerable: !0,
-    get: function() {
-        return b.default;
-    }
-});
+require("../ecma/PI/index.js"), require("../_includes/dester-inject-Math.js"), require("../ecma/fround/index.js"), 
+require("../ecma/pow/index.js"), require("../ecma/sign/index.js"), exports.clamp = e.default, 
+exports.DEG_PER_RAD = r.default, exports.degrees = s.default, exports.fscale = i.default, 
+exports.RAD_PER_DEG = d.default, exports.radians = a.default, exports.scale = u.default;

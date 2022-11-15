@@ -1,20 +1,10 @@
 /* eslint-disable */
-/*
-dester builds:
-extra/round.ts
-*/
 Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-var e = require("../../ecma/pow"), t = require("../../ecma/round");
+const e = require("../../ecma/pow/index.js"), r = require("../../ecma/round/index.js");
 
-function r(e) {
-    return e && "object" == typeof e && "default" in e ? e : {
-        default: e
-    };
-}
-
-var u = r(e), a = r(t);
-
-exports.default = (e, t) => t ? a.default(e * (t = u.default(10, t))) / t : a.default(e);
+require("../../_includes/dester-inject-Math.js"), exports.default = function(t, u) {
+    return u ? r.default(t * (u = e.default(10, u))) / u : r.default(t);
+};

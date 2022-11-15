@@ -1,10 +1,6 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/ceil.ts
-*/
-import a from "../../lib/Math";
+import { v as e } from "../../_includes/dester-inject-Math.mjs";
 
-var r = a.ceil;
+var t = e.ceil;
 
-export { r as default };
+export { t as default };

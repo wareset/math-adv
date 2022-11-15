@@ -1,16 +1,14 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/asinh.ts
-*/
-import r from "../../lib/Math";
+import { v as i } from "../../_includes/dester-inject-Math.mjs";
 
-import i from "../../lib/isFinite";
+import { v as r } from "../../_includes/dester-inject-isFinite.mjs";
 
-import o from "../log";
+import t from "../log/index.mjs";
 
-import t from "../sqrt";
+import e from "../sqrt/index.mjs";
 
-var m = r.asinh || (r => i(r = +r) && 0 !== r ? r < 0 ? -m(-r) : o(r + t(r * r + 1)) : r);
+var s = i.asinh || function(i) {
+    return r(i = +i) && 0 !== i ? i < 0 ? -s(-i) : t(i + e(i * i + 1)) : i;
+};
 
-export { m as default };
+export { s as default };

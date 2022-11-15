@@ -1,18 +1,8 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/SQRT1_2.ts
-*/
-function e(e) {
-    return e && "object" == typeof e && "default" in e ? e : {
-        default: e
-    };
-}
-
 Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-var t = e(require("../../lib/Math")).default.SQRT1_2;
+var e = require("../../_includes/dester-inject-Math.js").v.SQRT1_2;
 
-exports.default = t;
+exports.default = e;

@@ -1,11 +1,7 @@
 /* eslint-disable */
-/*
-dester builds:
-adv/div.ts
-*/
-var r = (...r) => {
-    for (var a = +r[0], e = 1, t = r.length; e < t; e++) a /= +r[e];
-    return a;
-};
+function t() {
+    for (var t = +(arguments.length <= 0 ? void 0 : arguments[0]), e = 1, n = arguments.length; e < n; e++) t /= +(e < 0 || arguments.length <= e ? void 0 : arguments[e]);
+    return t;
+}
 
-export { r as default };
+export { t as default };

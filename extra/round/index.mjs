@@ -1,12 +1,12 @@
 /* eslint-disable */
-/*
-dester builds:
-extra/round.ts
-*/
-import o from "../../ecma/pow";
+import e from "../../ecma/pow/index.mjs";
 
-import r from "../../ecma/round";
+import m from "../../ecma/round/index.mjs";
 
-var m = (m, a) => a ? r(m * (a = o(10, a))) / a : r(m);
+import "../../_includes/dester-inject-Math.mjs";
 
-export { m as default };
+function r(r, t) {
+    return t ? m(r * (t = e(10, t))) / t : m(r);
+}
+
+export { r as default };

@@ -1,3 +1,2 @@
-import __Math__ from '../lib/Math'
-const max = __Math__.max
+const max = Math.max
 export default max

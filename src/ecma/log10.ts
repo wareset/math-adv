@@ -1,6 +1,5 @@
-import __Math__ from '../lib/Math'
 import LOG10E from './LOG10E'
 import log from './log'
-const log10 = __Math__.log10 ||
-  ((x: number): number => log(+x) * LOG10E)
+const log10 = Math.log10 ||
+  function(x: number): number { return log(+x) * LOG10E }
 export default log10

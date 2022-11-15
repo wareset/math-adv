@@ -1,3 +1,2 @@
-import __Math__ from '../lib/Math'
-const sin = __Math__.sin
+const sin = Math.sin
 export default sin

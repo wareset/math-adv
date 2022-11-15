@@ -1,19 +1,13 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/tanh.ts
-*/
-import r from "../../lib/Math";
+import { v as r } from "../../_includes/dester-inject-Math.mjs";
 
-import t from "../../lib/Infinity";
+import e from "../exp/index.mjs";
 
-import m from "../exp";
+import t from "../expm1/index.mjs";
 
-import o from "../expm1";
+var m = r.tanh || function(r) {
+    var m, i;
+    return (m = t(r = +r)) === 1 / 0 ? 1 : (i = t(-r)) === 1 / 0 ? -1 : (m - i) / (e(r) + e(-r));
+};
 
-var i = r.tanh || (r => {
-    var i, p;
-    return (i = o(r = +r)) === t ? 1 : (p = o(-r)) === t ? -1 : (i - p) / (m(r) + m(-r));
-});
-
-export { i as default };
+export { m as default };

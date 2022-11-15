@@ -1,3 +1,2 @@
-import __Math__ from '../lib/Math'
-const atan = __Math__.atan
+const atan = Math.atan
 export default atan

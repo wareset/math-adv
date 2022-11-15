@@ -1,45 +1,5 @@
 /* eslint-disable */
-/*
-dester builds:
-adv/index.ts
-*/
-Object.defineProperty(exports, "__esModule", {
-    value: !0
-});
+const e = require("./div/index.js"), u = require("./mean/index.js"), r = require("./mul/index.js"), s = require("./sub/index.js"), d = require("./sum/index.js");
 
-var e = require("./div"), r = require("./mean"), t = require("./mul"), u = require("./sub"), n = require("./sum");
-
-function o(e) {
-    return e && "object" == typeof e && "default" in e ? e : {
-        default: e
-    };
-}
-
-var f = o(e), i = o(r), a = o(t), d = o(u), l = o(n);
-
-Object.defineProperty(exports, "div", {
-    enumerable: !0,
-    get: function() {
-        return f.default;
-    }
-}), Object.defineProperty(exports, "mean", {
-    enumerable: !0,
-    get: function() {
-        return i.default;
-    }
-}), Object.defineProperty(exports, "mul", {
-    enumerable: !0,
-    get: function() {
-        return a.default;
-    }
-}), Object.defineProperty(exports, "sub", {
-    enumerable: !0,
-    get: function() {
-        return d.default;
-    }
-}), Object.defineProperty(exports, "sum", {
-    enumerable: !0,
-    get: function() {
-        return l.default;
-    }
-});
+exports.div = e.default, exports.mean = u.default, exports.mul = r.default, exports.sub = s.default, 
+exports.sum = d.default;

@@ -1,10 +1,6 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/pow.ts
-*/
-import a from "../../lib/Math";
+import { v as e } from "../../_includes/dester-inject-Math.mjs";
 
-var o = a.pow;
+var t = e.pow;
 
-export { o as default };
+export { t as default };

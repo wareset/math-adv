@@ -1,12 +1,10 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/cosh.ts
-*/
-import o from "../../lib/Math";
+import { v as e } from "../../_includes/dester-inject-Math.mjs";
 
-import r from "../exp";
+import r from "../exp/index.mjs";
 
-var t = o.cosh || (o => (r(o) + r(-o)) / 2);
+var t = e.cosh || function(e) {
+    return (r(e) + r(-e)) / 2;
+};
 
 export { t as default };

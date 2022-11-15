@@ -1,2 +1,2 @@
-declare const clamp: (x: number, lower: number, upper: number) => number;
+declare function clamp(x: number, lower: number, upper: number): number;
 export default clamp;

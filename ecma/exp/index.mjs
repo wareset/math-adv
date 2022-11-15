@@ -1,10 +1,6 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/exp.ts
-*/
-import a from "../../lib/Math";
+import { v as e } from "../../_includes/dester-inject-Math.mjs";
 
-var r = a.exp;
+var t = e.exp;
 
-export { r as default };
+export { t as default };

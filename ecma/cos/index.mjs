@@ -1,10 +1,6 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/cos.ts
-*/
-import a from "../../lib/Math";
+import { v as e } from "../../_includes/dester-inject-Math.mjs";
 
-var o = a.cos;
+var s = e.cos;
 
-export { o as default };
+export { s as default };

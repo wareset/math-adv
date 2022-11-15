@@ -1,3 +1,2 @@
-import __Math__ from '../lib/Math'
-const floor = __Math__.floor
+const floor = Math.floor
 export default floor

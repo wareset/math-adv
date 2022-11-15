@@ -1,10 +1,15 @@
 /* eslint-disable */
-/*
-dester builds:
-extra/random.ts
-*/
-import o from "../../ecma/random";
+import n from "../../ecma/random/index.mjs";
 
-var a, r = (a = () => o() || a(), (o, r) => void 0 === o ? a() : void 0 === r ? a() * o : a() * (r - o) + o);
+import "../../_includes/dester-inject-Math.mjs";
+
+var r = function() {
+    function r() {
+        return n() || r();
+    }
+    return function(n, t) {
+        return void 0 === n ? r() : void 0 === t ? r() * n : r() * (t - n) + n;
+    };
+}();
 
 export { r as default };

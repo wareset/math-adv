@@ -1,3 +1,2 @@
-import __Math__ from '../lib/Math'
-const LOG2E = __Math__.LOG2E
+const LOG2E = Math.LOG2E
 export default LOG2E

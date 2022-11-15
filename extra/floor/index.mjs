@@ -1,12 +1,12 @@
 /* eslint-disable */
-/*
-dester builds:
-extra/floor.ts
-*/
-import o from "../../ecma/pow";
+import e from "../../ecma/pow/index.mjs";
 
-import r from "../../ecma/floor";
+import m from "../../ecma/floor/index.mjs";
 
-var m = (m, a) => a ? r(m * (a = o(10, a))) / a : r(m);
+import "../../_includes/dester-inject-Math.mjs";
 
-export { m as default };
+function o(o, r) {
+    return r ? m(o * (r = e(10, r))) / r : m(o);
+}
+
+export { o as default };

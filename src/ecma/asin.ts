@@ -1,3 +1,2 @@
-import __Math__ from '../lib/Math'
-const asin = __Math__.asin
+const asin = Math.asin
 export default asin

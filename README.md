@@ -16,7 +16,9 @@ All standard `js` methods like `Math`, but some contain polyfills:
 ```js
 import { round, random, abs, sign... } from 'math-safe';
 // or
-import * as MathSafe from 'math-safe'
+import * as MathSafeFull from 'math-safe'
+// or
+import * as MathSafe from 'math-safe/ecma' // like Math origin
 // or
 import random from 'math-safe/ecma/random'
 // or

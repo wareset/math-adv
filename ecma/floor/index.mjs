@@ -1,10 +1,6 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/floor.ts
-*/
-import o from "../../lib/Math";
+import { v as e } from "../../_includes/dester-inject-Math.mjs";
 
-var r = o.floor;
+var r = e.floor;
 
 export { r as default };

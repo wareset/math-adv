@@ -1,40 +1,7 @@
 /* eslint-disable */
-/*
-dester builds:
-extra/index.ts
-*/
-Object.defineProperty(exports, "__esModule", {
-    value: !0
-});
+const e = require("./ceil/index.js"), r = require("./floor/index.js"), i = require("./random/index.js"), d = require("./round/index.js");
 
-var e = require("./ceil"), r = require("./floor"), t = require("./random"), n = require("./round");
-
-function u(e) {
-    return e && "object" == typeof e && "default" in e ? e : {
-        default: e
-    };
-}
-
-var o = u(e), a = u(r), f = u(t), i = u(n);
-
-Object.defineProperty(exports, "ceilExtra", {
-    enumerable: !0,
-    get: function() {
-        return o.default;
-    }
-}), Object.defineProperty(exports, "floorExtra", {
-    enumerable: !0,
-    get: function() {
-        return a.default;
-    }
-}), Object.defineProperty(exports, "randomExtra", {
-    enumerable: !0,
-    get: function() {
-        return f.default;
-    }
-}), Object.defineProperty(exports, "roundExtra", {
-    enumerable: !0,
-    get: function() {
-        return i.default;
-    }
-});
+require("../ecma/pow/index.js"), require("../_includes/dester-inject-Math.js"), 
+require("../ecma/ceil/index.js"), require("../ecma/floor/index.js"), require("../ecma/random/index.js"), 
+require("../ecma/round/index.js"), exports.ceilExtra = e.default, exports.floorExtra = r.default, 
+exports.randomExtra = i.default, exports.roundExtra = d.default;

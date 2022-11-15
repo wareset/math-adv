@@ -1,10 +1,8 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/sign.ts
-*/
-import a from "../../lib/Math";
+import { v as t } from "../../_includes/dester-inject-Math.mjs";
 
-var r = a.sign || (a => (a = +a) > 0 ? 1 : a < 0 ? -1 : a);
+var e = t.sign || function(t) {
+    return (t = +t) > 0 ? 1 : t < 0 ? -1 : t;
+};
 
-export { r as default };
+export { e as default };

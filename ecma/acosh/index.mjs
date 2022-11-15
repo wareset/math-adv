@@ -1,18 +1,16 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/acosh.ts
-*/
-import o from "../../lib/Math";
+import { v as r } from "../../_includes/dester-inject-Math.mjs";
 
-import r from "../LN2";
+import m from "../LN2/index.mjs";
 
-import m from "../log";
+import o from "../log/index.mjs";
 
-import t from "../sqrt";
+import t from "../sqrt/index.mjs";
 
-import p from "../log1p";
+import i from "../log1p/index.mjs";
 
-var a = o.acosh || (o => (o = +o) < 1 ? NaN : o > 94906265.62425156 ? m(o) + r : p(o - 1 + t(o - 1) * t(o + 1)));
+var e = r.acosh || function(r) {
+    return (r = +r) < 1 ? NaN : r > 94906265.62425156 ? o(r) + m : i(r - 1 + t(r - 1) * t(r + 1));
+};
 
-export { a as default };
+export { e as default };

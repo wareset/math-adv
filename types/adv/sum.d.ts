@@ -1,2 +1,2 @@
-declare const sum: (...n: number[]) => number;
+declare function sum(...n: number[]): number;
 export default sum;

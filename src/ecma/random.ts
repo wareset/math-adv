@@ -1,3 +1,2 @@
-import __Math__ from '../lib/Math'
-const random = __Math__.random
+const random = Math.random
 export default random

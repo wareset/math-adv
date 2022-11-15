@@ -1,12 +1,10 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/expm1.ts
-*/
-import e from "../../lib/Math";
+import { v as e } from "../../_includes/dester-inject-Math.mjs";
 
-import r from "../exp";
+import r from "../exp/index.mjs";
 
-var m = e.expm1 || (e => (e = +e) ? e > -1e-6 && e < 1e-6 ? e + e * e / 2 : r(e) - 1 : e);
+var t = e.expm1 || function(e) {
+    return (e = +e) ? e > -1e-6 && e < 1e-6 ? e + e * e / 2 : r(e) - 1 : e;
+};
 
-export { m as default };
+export { t as default };

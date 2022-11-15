@@ -1,24 +1,14 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/hypot.ts
-*/
 Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-var e = require("../../lib/Math"), r = require("../../lib/Infinity"), t = require("../abs"), u = require("../sqrt");
+const e = require("../../_includes/dester-inject-Math.js"), r = require("../abs/index.js"), t = require("../sqrt/index.js");
 
-function a(e) {
-    return e && "object" == typeof e && "default" in e ? e : {
-        default: e
-    };
-}
-
-var f = a(e), l = a(r), i = a(t), d = a(u), n = f.default.hypot || ((...e) => {
-    for (var r, t, u = 0, a = 0, f = 0, n = e.length; f < n; f++) a < (r = i.default(+e[f])) ? (u = u * (t = a / r) * t + 1, 
-    a = r) : u += r > 0 ? (t = r / a) * t : r;
-    return a === l.default ? a : a * d.default(u);
-});
+var n = e.v.hypot || function() {
+    for (var e, n, s = 0, u = 0, d = 0, i = arguments.length; d < i; d++) u < (e = r.default(+(d < 0 || arguments.length <= d ? void 0 : arguments[d]))) ? (s = s * (n = u / e) * n + 1, 
+    u = e) : s += e > 0 ? (n = e / u) * n : e;
+    return u === 1 / 0 ? u : u * t.default(s);
+};
 
 exports.default = n;

@@ -1,18 +1,8 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/abs.ts
-*/
-function e(e) {
-    return e && "object" == typeof e && "default" in e ? e : {
-        default: e
-    };
-}
-
 Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-var t = e(require("../../lib/Math")).default.abs;
+var e = require("../../_includes/dester-inject-Math.js").v.abs;
 
-exports.default = t;
+exports.default = e;

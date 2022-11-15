@@ -1,14 +1,12 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/cbrt.ts
-*/
-import r from "../../lib/Math";
+import { v as t } from "../../_includes/dester-inject-Math.mjs";
 
-import i from "../../lib/isFinite";
+import { v as e } from "../../_includes/dester-inject-isFinite.mjs";
 
-import o from "../pow";
+import r from "../pow/index.mjs";
 
-var t = r.cbrt || (r => i(r = +r) && 0 !== r ? r > 0 ? o(r, 1 / 3) : -o(-r, 1 / 3) : r);
+var i = t.cbrt || function(t) {
+    return e(t = +t) && 0 !== t ? t > 0 ? r(t, 1 / 3) : -r(-t, 1 / 3) : t;
+};
 
-export { t as default };
+export { i as default };

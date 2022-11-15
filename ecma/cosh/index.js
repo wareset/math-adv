@@ -1,20 +1,12 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/cosh.ts
-*/
 Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-var e = require("../../lib/Math"), t = require("../exp");
+const e = require("../../_includes/dester-inject-Math.js"), t = require("../exp/index.js");
 
-function r(e) {
-    return e && "object" == typeof e && "default" in e ? e : {
-        default: e
-    };
-}
+var r = e.v.cosh || function(e) {
+    return (t.default(e) + t.default(-e)) / 2;
+};
 
-var u = r(e), a = r(t), f = u.default.cosh || (e => (a.default(e) + a.default(-e)) / 2);
-
-exports.default = f;
+exports.default = r;

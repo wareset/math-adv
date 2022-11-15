@@ -1,3 +1,2 @@
-import __Math__ from '../lib/Math'
-const exp = __Math__.exp
+const exp = Math.exp
 export default exp

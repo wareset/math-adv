@@ -1,10 +1,6 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/max.ts
-*/
-import a from "../../lib/Math";
+import { v as a } from "../../_includes/dester-inject-Math.mjs";
 
-var r = a.max;
+var e = a.max;
 
-export { r as default };
+export { e as default };

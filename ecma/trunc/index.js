@@ -1,20 +1,12 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/trunc.ts
-*/
 Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-var e = require("../../lib/Math"), r = require("../ceil"), t = require("../floor");
+const e = require("../../_includes/dester-inject-Math.js"), r = require("../ceil/index.js"), t = require("../floor/index.js");
 
-function u(e) {
-    return e && "object" == typeof e && "default" in e ? e : {
-        default: e
-    };
-}
+var u = e.v.trunc || function(e) {
+    return (e > 0 ? t.default : r.default)(e);
+};
 
-var l = u(e), a = u(r), f = u(t), o = l.default.trunc || (e => (e > 0 ? f.default : a.default)(e));
-
-exports.default = o;
+exports.default = u;

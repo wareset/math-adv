@@ -1,3 +1,2 @@
-import __Math__ from '../lib/Math'
-const acos = __Math__.acos
+const acos = Math.acos
 export default acos

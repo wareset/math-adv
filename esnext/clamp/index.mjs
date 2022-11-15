@@ -1,8 +1,6 @@
 /* eslint-disable */
-/*
-dester builds:
-esnext/clamp.ts
-*/
-var a = (a, e, r) => (a = +a) < e ? e : a > r ? r : a;
+function t(t, e, n) {
+    return (t = +t) < e ? e : t > n ? n : t;
+}
 
-export { a as default };
+export { t as default };

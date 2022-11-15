@@ -1,3 +1,2 @@
-import __Math__ from '../lib/Math'
-const min = __Math__.min
+const min = Math.min
 export default min

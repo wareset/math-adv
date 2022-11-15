@@ -1,2 +1,2 @@
-declare const div: (...n: number[]) => number;
+declare function div(...n: number[]): number;
 export default div;

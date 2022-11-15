@@ -1,10 +1,6 @@
 /* eslint-disable */
-/*
-dester builds:
-esnext/scale.ts
-*/
 Object.defineProperty(exports, "__esModule", {
     value: !0
-});
-
-exports.default = (e, t, o, r, d) => (+e - (t = +t)) * (+d - (r = +r)) / (+o - t) + r;
+}), exports.default = function(e, t, r, o, u) {
+    return (+e - (t = +t)) * (+u - (o = +o)) / (+r - t) + o;
+};

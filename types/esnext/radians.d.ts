@@ -1,2 +1,2 @@
-declare const radians: (degrees: number) => number;
+declare function radians(degrees: number): number;
 export default radians;

@@ -1,10 +1,12 @@
 /* eslint-disable */
-/*
-dester builds:
-esnext/degrees.ts
-*/
-import r from "../RAD_PER_DEG";
+import e from "../RAD_PER_DEG/index.mjs";
 
-var a = a => a * r;
+import "../../ecma/PI/index.mjs";
 
-export { a as default };
+import "../../_includes/dester-inject-Math.mjs";
+
+function t(t) {
+    return t * e;
+}
+
+export { t as default };

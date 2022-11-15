@@ -1,3 +1,2 @@
-import __Math__ from '../lib/Math'
-const ceil = __Math__.ceil
+const ceil = Math.ceil
 export default ceil

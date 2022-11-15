@@ -1,14 +1,12 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/log2.ts
-*/
-import o from "../../lib/Math";
+import { v as r } from "../../_includes/dester-inject-Math.mjs";
 
-import r from "../LN2";
+import o from "../LN2/index.mjs";
 
-import m from "../log";
+import t from "../log/index.mjs";
 
-var t = o.log2 || (o => m(+o) / r);
+var e = r.log2 || function(r) {
+    return t(+r) / o;
+};
 
-export { t as default };
+export { e as default };

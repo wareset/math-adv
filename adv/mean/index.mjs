@@ -1,11 +1,7 @@
 /* eslint-disable */
-/*
-dester builds:
-adv/mean.ts
-*/
-var r = (...r) => {
-    for (var a = +r[0], e = r.length, t = 1; t < e; t++) a += +r[t];
-    return a / e;
-};
+function t() {
+    for (var t = +(arguments.length <= 0 ? void 0 : arguments[0]), e = arguments.length, n = 1; n < e; n++) t += +(n < 0 || arguments.length <= n ? void 0 : arguments[n]);
+    return t / e;
+}
 
-export { r as default };
+export { t as default };

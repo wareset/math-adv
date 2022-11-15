@@ -1,20 +1,11 @@
 /* eslint-disable */
-/*
-dester builds:
-esnext/fscale.ts
-*/
 Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-var e = require("../scale"), r = require("../../ecma/fround");
+const e = require("../scale/index.js"), r = require("../../ecma/fround/index.js");
 
-function t(e) {
-    return e && "object" == typeof e && "default" in e ? e : {
-        default: e
-    };
-}
-
-var u = t(e), a = t(r);
-
-exports.default = (e, r, t, f, d) => a.default(u.default(e, r, t, f, d));
+require("../../_includes/dester-inject-Math.js"), require("../../ecma/pow/index.js"), 
+require("../../ecma/sign/index.js"), exports.default = function(i, u, n, s, t) {
+    return r.default(e.default(i, u, n, s, t));
+};

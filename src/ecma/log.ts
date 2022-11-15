@@ -1,3 +1,2 @@
-import __Math__ from '../lib/Math'
-const log = __Math__.log
+const log = Math.log
 export default log

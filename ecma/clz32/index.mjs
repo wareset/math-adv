@@ -1,16 +1,14 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/clz32.ts
-*/
-import o from "../../lib/Math";
+import { v as r } from "../../_includes/dester-inject-Math.mjs";
 
-import r from "../LOG2E";
+import o from "../LOG2E/index.mjs";
 
-import m from "../log";
+import m from "../log/index.mjs";
 
-import t from "../floor";
+import t from "../floor/index.mjs";
 
-var f = o.clz32 || (o => 0 != (o = +o >>> 0) ? 31 - t(m(o + .5) * r) : 32);
+var e = r.clz32 || function(r) {
+    return 0 != (r = +r >>> 0) ? 31 - t(m(r + .5) * o) : 32;
+};
 
-export { f as default };
+export { e as default };

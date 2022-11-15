@@ -1,3 +1,2 @@
-import __Math__ from '../lib/Math'
-const abs = __Math__.abs
+const abs = Math.abs
 export default abs

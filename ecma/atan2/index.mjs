@@ -1,9 +1,5 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/atan2.ts
-*/
-import a from "../../lib/Math";
+import { v as a } from "../../_includes/dester-inject-Math.mjs";
 
 var t = a.atan2;
 

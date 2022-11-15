@@ -1,10 +1,6 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/tan.ts
-*/
-import a from "../../lib/Math";
+import { v as t } from "../../_includes/dester-inject-Math.mjs";
 
-var t = a.tan;
+var a = t.tan;
 
-export { t as default };
+export { a as default };

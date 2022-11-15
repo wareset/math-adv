@@ -1,10 +1,8 @@
 /* eslint-disable */
-/*
-dester builds:
-esnext/RAD_PER_DEG.ts
-*/
-import a from "../../ecma/PI";
+import e from "../../ecma/PI/index.mjs";
 
-var r = 180 / a;
+import "../../_includes/dester-inject-Math.mjs";
 
-export { r as default };
+var t = 180 / e;
+
+export { t as default };

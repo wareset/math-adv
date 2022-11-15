@@ -1,23 +1,20 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/fround.ts
-*/
-import r from "../../lib/Math";
+import { v as r } from "../../_includes/dester-inject-Math.mjs";
 
-import o from "../../lib/Infinity";
+import n from "../pow/index.mjs";
 
-import t from "../pow";
+import t from "../sign/index.mjs";
 
-import i from "../sign";
-
-var m = r.fround || ((r, o, t) => {
-    var i, m, f, a, n = !1;
-    return p => {
-        n || (n = !0, i = r(2, -52), m = r(2, -23), f = r(2, 127) * (2 - m), a = r(2, -126));
-        var e, u, l = o(p = +p), v = p * l;
-        return v < a ? l * (r => r + 1 / i - 1 / i)(v / a / m) * a * m : (u = (e = (1 + m / i) * v) - (e - v)) > f || u != u ? l * t : l * u;
+var o = r.fround || function(r, n) {
+    var t, o, e, i;
+    var m = !1;
+    return function(u) {
+        m || (m = !0, t = r(2, -52), o = r(2, -23), e = r(2, 127) * (2 - o), i = r(2, -126));
+        var a, f, s = n(u = +u), d = u * s;
+        return d < i ? s * function(r) {
+            return r + 1 / t - 1 / t;
+        }(d / i / o) * i * o : (f = (a = (1 + o / t) * d) - (a - d)) > e || f != f ? s * (1 / 0) : s * f;
     };
-})(t, i, o);
+}(n, t);
 
-export { m as default };
+export { o as default };

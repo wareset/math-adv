@@ -1,14 +1,12 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/trunc.ts
-*/
-import r from "../../lib/Math";
+import { v as r } from "../../_includes/dester-inject-Math.mjs";
 
-import o from "../ceil";
+import t from "../ceil/index.mjs";
 
-import t from "../floor";
+import e from "../floor/index.mjs";
 
-var m = r.trunc || (r => (r > 0 ? t : o)(r));
+var o = r.trunc || function(r) {
+    return (r > 0 ? e : t)(r);
+};
 
-export { m as default };
+export { o as default };

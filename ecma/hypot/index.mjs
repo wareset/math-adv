@@ -1,20 +1,14 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/hypot.ts
-*/
-import r from "../../lib/Math";
+import { v as r } from "../../_includes/dester-inject-Math.mjs";
 
-import t from "../../lib/Infinity";
+import t from "../abs/index.mjs";
 
-import o from "../abs";
+import e from "../sqrt/index.mjs";
 
-import i from "../sqrt";
+var o = r.hypot || function() {
+    for (var r, o, i = 0, m = 0, n = 0, s = arguments.length; n < s; n++) m < (r = t(+(n < 0 || arguments.length <= n ? void 0 : arguments[n]))) ? (i = i * (o = m / r) * o + 1, 
+    m = r) : i += r > 0 ? (o = r / m) * o : r;
+    return m === 1 / 0 ? m : m * e(i);
+};
 
-var m = r.hypot || ((...r) => {
-    for (var m, f, a = 0, p = 0, e = 0, l = r.length; e < l; e++) p < (m = o(+r[e])) ? (a = a * (f = p / m) * f + 1, 
-    p = m) : a += m > 0 ? (f = m / p) * f : m;
-    return p === t ? p : p * i(a);
-});
-
-export { m as default };
+export { o as default };

@@ -1,12 +1,16 @@
 /* eslint-disable */
-/*
-dester builds:
-esnext/fscale.ts
-*/
-import r from "../scale";
+import e from "../scale/index.mjs";
 
-import o from "../../ecma/fround";
+import m from "../../ecma/fround/index.mjs";
 
-var a = (a, m, e, f, t) => o(r(a, m, e, f, t));
+import "../../_includes/dester-inject-Math.mjs";
 
-export { a as default };
+import "../../ecma/pow/index.mjs";
+
+import "../../ecma/sign/index.mjs";
+
+function i(i, r, t, n, o) {
+    return m(e(i, r, t, n, o));
+}
+
+export { i as default };

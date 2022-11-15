@@ -1,3 +1,2 @@
-import __Math__ from '../lib/Math'
-const tan = __Math__.tan
+const tan = Math.tan
 export default tan

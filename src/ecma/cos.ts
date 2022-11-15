@@ -1,3 +1,2 @@
-import __Math__ from '../lib/Math'
-const cos = __Math__.cos
+const cos = Math.cos
 export default cos

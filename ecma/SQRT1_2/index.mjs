@@ -1,10 +1,6 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/SQRT1_2.ts
-*/
-import a from "../../lib/Math";
+import { v as e } from "../../_includes/dester-inject-Math.mjs";
 
-var r = a.SQRT1_2;
+var t = e.SQRT1_2;
 
-export { r as default };
+export { t as default };

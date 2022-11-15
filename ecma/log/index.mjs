@@ -1,10 +1,6 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/log.ts
-*/
-import a from "../../lib/Math";
+import { v as e } from "../../_includes/dester-inject-Math.mjs";
 
-var o = a.log;
+var t = e.log;
 
-export { o as default };
+export { t as default };

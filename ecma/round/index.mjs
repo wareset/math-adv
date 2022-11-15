@@ -1,10 +1,6 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/round.ts
-*/
-import r from "../../lib/Math";
+import { v as e } from "../../_includes/dester-inject-Math.mjs";
 
-var a = r.round;
+var r = e.round;
 
-export { a as default };
+export { r as default };

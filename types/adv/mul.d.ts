@@ -1,2 +1,2 @@
-declare const mul: (...n: number[]) => number;
+declare function mul(...n: number[]): number;
 export default mul;

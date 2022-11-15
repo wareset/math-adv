@@ -1,18 +1,12 @@
 /* eslint-disable */
-/*
-dester builds:
-esnext/DEG_PER_RAD.ts
-*/
-function e(e) {
-    return e && "object" == typeof e && "default" in e ? e : {
-        default: e
-    };
-}
-
 Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-var t = e(require("../../ecma/PI")).default / 180;
+const e = require("../../ecma/PI/index.js");
 
-exports.default = t;
+require("../../_includes/dester-inject-Math.js");
+
+var r = e.default / 180;
+
+exports.default = r;

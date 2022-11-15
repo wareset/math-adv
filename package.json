@@ -1,6 +1,6 @@
 {
   "name": "math-safe",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Math with all the necessary polyfills and additional functions",
   "keywords": [
     "safe",
@@ -21,9 +21,10 @@
   "author": "rease <cftcview@gmail.com>",
   "main": "index",
   "module": "index.mjs",
-  "types": "index.d.ts",
+  "types": "types/index.d.ts",
   "files": [
     "README.md",
+    "_includes/**/*",
     "adv/**/*",
     "ecma/**/*",
     "esnext/**/*",
@@ -31,16 +32,337 @@
     "index.d.ts",
     "index.js",
     "index.mjs",
-    "lib/**/*",
     "types/**/*"
   ],
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "types": "./types/index.d.ts"
+    },
+    "./adv": {
+      "import": "./adv/index.mjs",
+      "require": "./adv/index.js",
+      "types": "./types/adv/index.d.ts"
+    },
+    "./adv/div": {
+      "import": "./adv/div/index.mjs",
+      "require": "./adv/div/index.js",
+      "types": "./types/adv/div.d.ts"
+    },
+    "./adv/mean": {
+      "import": "./adv/mean/index.mjs",
+      "require": "./adv/mean/index.js",
+      "types": "./types/adv/mean.d.ts"
+    },
+    "./adv/mul": {
+      "import": "./adv/mul/index.mjs",
+      "require": "./adv/mul/index.js",
+      "types": "./types/adv/mul.d.ts"
+    },
+    "./adv/sub": {
+      "import": "./adv/sub/index.mjs",
+      "require": "./adv/sub/index.js",
+      "types": "./types/adv/sub.d.ts"
+    },
+    "./adv/sum": {
+      "import": "./adv/sum/index.mjs",
+      "require": "./adv/sum/index.js",
+      "types": "./types/adv/sum.d.ts"
+    },
+    "./ecma": {
+      "import": "./ecma/index.mjs",
+      "require": "./ecma/index.js",
+      "types": "./types/ecma/index.d.ts"
+    },
+    "./ecma/E": {
+      "import": "./ecma/E/index.mjs",
+      "require": "./ecma/E/index.js",
+      "types": "./types/ecma/E.d.ts"
+    },
+    "./ecma/LN10": {
+      "import": "./ecma/LN10/index.mjs",
+      "require": "./ecma/LN10/index.js",
+      "types": "./types/ecma/LN10.d.ts"
+    },
+    "./ecma/LN2": {
+      "import": "./ecma/LN2/index.mjs",
+      "require": "./ecma/LN2/index.js",
+      "types": "./types/ecma/LN2.d.ts"
+    },
+    "./ecma/LOG10E": {
+      "import": "./ecma/LOG10E/index.mjs",
+      "require": "./ecma/LOG10E/index.js",
+      "types": "./types/ecma/LOG10E.d.ts"
+    },
+    "./ecma/LOG2E": {
+      "import": "./ecma/LOG2E/index.mjs",
+      "require": "./ecma/LOG2E/index.js",
+      "types": "./types/ecma/LOG2E.d.ts"
+    },
+    "./ecma/PI": {
+      "import": "./ecma/PI/index.mjs",
+      "require": "./ecma/PI/index.js",
+      "types": "./types/ecma/PI.d.ts"
+    },
+    "./ecma/SQRT1_2": {
+      "import": "./ecma/SQRT1_2/index.mjs",
+      "require": "./ecma/SQRT1_2/index.js",
+      "types": "./types/ecma/SQRT1_2.d.ts"
+    },
+    "./ecma/SQRT2": {
+      "import": "./ecma/SQRT2/index.mjs",
+      "require": "./ecma/SQRT2/index.js",
+      "types": "./types/ecma/SQRT2.d.ts"
+    },
+    "./ecma/abs": {
+      "import": "./ecma/abs/index.mjs",
+      "require": "./ecma/abs/index.js",
+      "types": "./types/ecma/abs.d.ts"
+    },
+    "./ecma/acos": {
+      "import": "./ecma/acos/index.mjs",
+      "require": "./ecma/acos/index.js",
+      "types": "./types/ecma/acos.d.ts"
+    },
+    "./ecma/acosh": {
+      "import": "./ecma/acosh/index.mjs",
+      "require": "./ecma/acosh/index.js",
+      "types": "./types/ecma/acosh.d.ts"
+    },
+    "./ecma/asin": {
+      "import": "./ecma/asin/index.mjs",
+      "require": "./ecma/asin/index.js",
+      "types": "./types/ecma/asin.d.ts"
+    },
+    "./ecma/asinh": {
+      "import": "./ecma/asinh/index.mjs",
+      "require": "./ecma/asinh/index.js",
+      "types": "./types/ecma/asinh.d.ts"
+    },
+    "./ecma/atan": {
+      "import": "./ecma/atan/index.mjs",
+      "require": "./ecma/atan/index.js",
+      "types": "./types/ecma/atan.d.ts"
+    },
+    "./ecma/atan2": {
+      "import": "./ecma/atan2/index.mjs",
+      "require": "./ecma/atan2/index.js",
+      "types": "./types/ecma/atan2.d.ts"
+    },
+    "./ecma/atanh": {
+      "import": "./ecma/atanh/index.mjs",
+      "require": "./ecma/atanh/index.js",
+      "types": "./types/ecma/atanh.d.ts"
+    },
+    "./ecma/cbrt": {
+      "import": "./ecma/cbrt/index.mjs",
+      "require": "./ecma/cbrt/index.js",
+      "types": "./types/ecma/cbrt.d.ts"
+    },
+    "./ecma/ceil": {
+      "import": "./ecma/ceil/index.mjs",
+      "require": "./ecma/ceil/index.js",
+      "types": "./types/ecma/ceil.d.ts"
+    },
+    "./ecma/clz32": {
+      "import": "./ecma/clz32/index.mjs",
+      "require": "./ecma/clz32/index.js",
+      "types": "./types/ecma/clz32.d.ts"
+    },
+    "./ecma/cos": {
+      "import": "./ecma/cos/index.mjs",
+      "require": "./ecma/cos/index.js",
+      "types": "./types/ecma/cos.d.ts"
+    },
+    "./ecma/cosh": {
+      "import": "./ecma/cosh/index.mjs",
+      "require": "./ecma/cosh/index.js",
+      "types": "./types/ecma/cosh.d.ts"
+    },
+    "./ecma/exp": {
+      "import": "./ecma/exp/index.mjs",
+      "require": "./ecma/exp/index.js",
+      "types": "./types/ecma/exp.d.ts"
+    },
+    "./ecma/expm1": {
+      "import": "./ecma/expm1/index.mjs",
+      "require": "./ecma/expm1/index.js",
+      "types": "./types/ecma/expm1.d.ts"
+    },
+    "./ecma/floor": {
+      "import": "./ecma/floor/index.mjs",
+      "require": "./ecma/floor/index.js",
+      "types": "./types/ecma/floor.d.ts"
+    },
+    "./ecma/fround": {
+      "import": "./ecma/fround/index.mjs",
+      "require": "./ecma/fround/index.js",
+      "types": "./types/ecma/fround.d.ts"
+    },
+    "./ecma/hypot": {
+      "import": "./ecma/hypot/index.mjs",
+      "require": "./ecma/hypot/index.js",
+      "types": "./types/ecma/hypot.d.ts"
+    },
+    "./ecma/imul": {
+      "import": "./ecma/imul/index.mjs",
+      "require": "./ecma/imul/index.js",
+      "types": "./types/ecma/imul.d.ts"
+    },
+    "./ecma/log": {
+      "import": "./ecma/log/index.mjs",
+      "require": "./ecma/log/index.js",
+      "types": "./types/ecma/log.d.ts"
+    },
+    "./ecma/log10": {
+      "import": "./ecma/log10/index.mjs",
+      "require": "./ecma/log10/index.js",
+      "types": "./types/ecma/log10.d.ts"
+    },
+    "./ecma/log1p": {
+      "import": "./ecma/log1p/index.mjs",
+      "require": "./ecma/log1p/index.js",
+      "types": "./types/ecma/log1p.d.ts"
+    },
+    "./ecma/log2": {
+      "import": "./ecma/log2/index.mjs",
+      "require": "./ecma/log2/index.js",
+      "types": "./types/ecma/log2.d.ts"
+    },
+    "./ecma/max": {
+      "import": "./ecma/max/index.mjs",
+      "require": "./ecma/max/index.js",
+      "types": "./types/ecma/max.d.ts"
+    },
+    "./ecma/min": {
+      "import": "./ecma/min/index.mjs",
+      "require": "./ecma/min/index.js",
+      "types": "./types/ecma/min.d.ts"
+    },
+    "./ecma/pow": {
+      "import": "./ecma/pow/index.mjs",
+      "require": "./ecma/pow/index.js",
+      "types": "./types/ecma/pow.d.ts"
+    },
+    "./ecma/random": {
+      "import": "./ecma/random/index.mjs",
+      "require": "./ecma/random/index.js",
+      "types": "./types/ecma/random.d.ts"
+    },
+    "./ecma/round": {
+      "import": "./ecma/round/index.mjs",
+      "require": "./ecma/round/index.js",
+      "types": "./types/ecma/round.d.ts"
+    },
+    "./ecma/sign": {
+      "import": "./ecma/sign/index.mjs",
+      "require": "./ecma/sign/index.js",
+      "types": "./types/ecma/sign.d.ts"
+    },
+    "./ecma/sin": {
+      "import": "./ecma/sin/index.mjs",
+      "require": "./ecma/sin/index.js",
+      "types": "./types/ecma/sin.d.ts"
+    },
+    "./ecma/sinh": {
+      "import": "./ecma/sinh/index.mjs",
+      "require": "./ecma/sinh/index.js",
+      "types": "./types/ecma/sinh.d.ts"
+    },
+    "./ecma/sqrt": {
+      "import": "./ecma/sqrt/index.mjs",
+      "require": "./ecma/sqrt/index.js",
+      "types": "./types/ecma/sqrt.d.ts"
+    },
+    "./ecma/tan": {
+      "import": "./ecma/tan/index.mjs",
+      "require": "./ecma/tan/index.js",
+      "types": "./types/ecma/tan.d.ts"
+    },
+    "./ecma/tanh": {
+      "import": "./ecma/tanh/index.mjs",
+      "require": "./ecma/tanh/index.js",
+      "types": "./types/ecma/tanh.d.ts"
+    },
+    "./ecma/trunc": {
+      "import": "./ecma/trunc/index.mjs",
+      "require": "./ecma/trunc/index.js",
+      "types": "./types/ecma/trunc.d.ts"
+    },
+    "./esnext": {
+      "import": "./esnext/index.mjs",
+      "require": "./esnext/index.js",
+      "types": "./types/esnext/index.d.ts"
+    },
+    "./esnext/DEG_PER_RAD": {
+      "import": "./esnext/DEG_PER_RAD/index.mjs",
+      "require": "./esnext/DEG_PER_RAD/index.js",
+      "types": "./types/esnext/DEG_PER_RAD.d.ts"
+    },
+    "./esnext/RAD_PER_DEG": {
+      "import": "./esnext/RAD_PER_DEG/index.mjs",
+      "require": "./esnext/RAD_PER_DEG/index.js",
+      "types": "./types/esnext/RAD_PER_DEG.d.ts"
+    },
+    "./esnext/clamp": {
+      "import": "./esnext/clamp/index.mjs",
+      "require": "./esnext/clamp/index.js",
+      "types": "./types/esnext/clamp.d.ts"
+    },
+    "./esnext/degrees": {
+      "import": "./esnext/degrees/index.mjs",
+      "require": "./esnext/degrees/index.js",
+      "types": "./types/esnext/degrees.d.ts"
+    },
+    "./esnext/fscale": {
+      "import": "./esnext/fscale/index.mjs",
+      "require": "./esnext/fscale/index.js",
+      "types": "./types/esnext/fscale.d.ts"
+    },
+    "./esnext/radians": {
+      "import": "./esnext/radians/index.mjs",
+      "require": "./esnext/radians/index.js",
+      "types": "./types/esnext/radians.d.ts"
+    },
+    "./esnext/scale": {
+      "import": "./esnext/scale/index.mjs",
+      "require": "./esnext/scale/index.js",
+      "types": "./types/esnext/scale.d.ts"
+    },
+    "./extra": {
+      "import": "./extra/index.mjs",
+      "require": "./extra/index.js",
+      "types": "./types/extra/index.d.ts"
+    },
+    "./extra/ceil": {
+      "import": "./extra/ceil/index.mjs",
+      "require": "./extra/ceil/index.js",
+      "types": "./types/extra/ceil.d.ts"
+    },
+    "./extra/floor": {
+      "import": "./extra/floor/index.mjs",
+      "require": "./extra/floor/index.js",
+      "types": "./types/extra/floor.d.ts"
+    },
+    "./extra/random": {
+      "import": "./extra/random/index.mjs",
+      "require": "./extra/random/index.js",
+      "types": "./types/extra/random.d.ts"
+    },
+    "./extra/round": {
+      "import": "./extra/round/index.mjs",
+      "require": "./extra/round/index.js",
+      "types": "./types/extra/round.d.ts"
+    }
+  },
   "scripts": {
-    "dester": "dester ./src ./ -t types",
-    "build": "npm run -s dester -- -r -m",
-    "dev": "npm run -s dester -- -w --no-r -m"
+    "build": "dester --ie",
+    "dev": "dester --ie -w"
   },
   "devDependencies": {
-    "dester": "0.x",
-    "typescript": "4.x"
+    "dester": "1.0.x",
+    "typescript": "^4.8.4"
   }
 }

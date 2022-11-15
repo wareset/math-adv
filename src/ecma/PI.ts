@@ -1,3 +1,2 @@
-import __Math__ from '../lib/Math'
-const PI = __Math__.PI
+const PI = Math.PI
 export default PI

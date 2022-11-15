@@ -1,20 +1,12 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/asinh.ts
-*/
 Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-var e = require("../../lib/Math"), t = require("../../lib/isFinite"), r = require("../log"), u = require("../sqrt");
+const e = require("../../_includes/dester-inject-Math.js"), r = require("../../_includes/dester-inject-isFinite.js"), t = require("../log/index.js"), i = require("../sqrt/index.js");
 
-function i(e) {
-    return e && "object" == typeof e && "default" in e ? e : {
-        default: e
-    };
-}
+var s = e.v.asinh || function(e) {
+    return r.v(e = +e) && 0 !== e ? e < 0 ? -s(-e) : t.default(e + i.default(e * e + 1)) : e;
+};
 
-var a = i(e), l = i(t), f = i(r), d = i(u), o = a.default.asinh || (e => l.default(e = +e) && 0 !== e ? e < 0 ? -o(-e) : f.default(e + d.default(e * e + 1)) : e);
-
-exports.default = o;
+exports.default = s;

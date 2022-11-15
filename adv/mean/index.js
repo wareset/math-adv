@@ -1,13 +1,7 @@
 /* eslint-disable */
-/*
-dester builds:
-adv/mean.ts
-*/
 Object.defineProperty(exports, "__esModule", {
     value: !0
-});
-
-exports.default = (...e) => {
-    for (var r = +e[0], t = e.length, o = 1; o < t; o++) r += +e[o];
-    return r / t;
+}), exports.default = function() {
+    for (var e = +(arguments.length <= 0 ? void 0 : arguments[0]), t = arguments.length, o = 1; o < t; o++) e += +(o < 0 || arguments.length <= o ? void 0 : arguments[o]);
+    return e / t;
 };

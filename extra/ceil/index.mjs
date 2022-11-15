@@ -1,12 +1,12 @@
 /* eslint-disable */
-/*
-dester builds:
-extra/ceil.ts
-*/
-import m from "../../ecma/pow";
+import e from "../../ecma/pow/index.mjs";
 
-import o from "../../ecma/ceil";
+import m from "../../ecma/ceil/index.mjs";
 
-var r = (r, a) => a ? o(r * (a = m(10, a))) / a : o(r);
+import "../../_includes/dester-inject-Math.mjs";
 
-export { r as default };
+function t(t, i) {
+    return i ? m(t * (i = e(10, i))) / i : m(t);
+}
+
+export { t as default };

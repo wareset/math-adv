@@ -1,12 +1,10 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/atanh.ts
-*/
-import a from "../../lib/Math";
+import { v as t } from "../../_includes/dester-inject-Math.mjs";
 
-import o from "../log";
+import r from "../log/index.mjs";
 
-var r = a.atanh || (a => (a = +a) ? o((1 + a) / (1 - a)) / 2 : a);
+var e = t.atanh || function(t) {
+    return (t = +t) ? r((1 + t) / (1 - t)) / 2 : t;
+};
 
-export { r as default };
+export { e as default };

@@ -1,10 +1,6 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/PI.ts
-*/
-import a from "../../lib/Math";
+import { v as e } from "../../_includes/dester-inject-Math.mjs";
 
-var r = a.PI;
+var t = e.PI;
 
-export { r as default };
+export { t as default };

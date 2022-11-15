@@ -1,20 +1,10 @@
 /* eslint-disable */
-/*
-dester builds:
-extra/ceil.ts
-*/
 Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-var e = require("../../ecma/pow"), t = require("../../ecma/ceil");
+const e = require("../../ecma/pow/index.js"), t = require("../../ecma/ceil/index.js");
 
-function r(e) {
-    return e && "object" == typeof e && "default" in e ? e : {
-        default: e
-    };
-}
-
-var u = r(e), a = r(t);
-
-exports.default = (e, t) => t ? a.default(e * (t = u.default(10, t))) / t : a.default(e);
+require("../../_includes/dester-inject-Math.js"), exports.default = function(r, u) {
+    return u ? t.default(r * (u = e.default(10, u))) / u : t.default(r);
+};

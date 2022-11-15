@@ -1,18 +1,11 @@
 /* eslint-disable */
-/*
-dester builds:
-esnext/degrees.ts
-*/
-function e(e) {
-    return e && "object" == typeof e && "default" in e ? e : {
-        default: e
-    };
-}
-
 Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-var t = e(require("../RAD_PER_DEG"));
+const e = require("../RAD_PER_DEG/index.js");
 
-exports.default = e => e * t.default;
+require("../../ecma/PI/index.js"), require("../../_includes/dester-inject-Math.js"), 
+exports.default = function(r) {
+    return r * e.default;
+};

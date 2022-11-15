@@ -1,10 +1,6 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/acos.ts
-*/
-import a from "../../lib/Math";
+import { v as a } from "../../_includes/dester-inject-Math.mjs";
 
-var o = a.acos;
+var e = a.acos;
 
-export { o as default };
+export { e as default };

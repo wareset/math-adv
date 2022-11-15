@@ -1,8 +1,6 @@
 /* eslint-disable */
-/*
-dester builds:
-esnext/scale.ts
-*/
-var a = (a, e, r, t, d) => (+a - (e = +e)) * (+d - (t = +t)) / (+r - e) + t;
+function t(t, e, n, r, u) {
+    return (+t - (e = +e)) * (+u - (r = +r)) / (+n - e) + r;
+}
 
-export { a as default };
+export { t as default };

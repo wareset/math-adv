@@ -1,20 +1,12 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/log2.ts
-*/
 Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-var e = require("../../lib/Math"), t = require("../LN2"), r = require("../log");
+const e = require("../../_includes/dester-inject-Math.js"), r = require("../LN2/index.js"), t = require("../log/index.js");
 
-function u(e) {
-    return e && "object" == typeof e && "default" in e ? e : {
-        default: e
-    };
-}
+var u = e.v.log2 || function(e) {
+    return t.default(+e) / r.default;
+};
 
-var l = u(e), a = u(t), f = u(r), o = l.default.log2 || (e => f.default(+e) / a.default);
-
-exports.default = o;
+exports.default = u;

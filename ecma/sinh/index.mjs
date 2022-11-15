@@ -1,12 +1,10 @@
 /* eslint-disable */
-/*
-dester builds:
-ecma/sinh.ts
-*/
-import r from "../../lib/Math";
+import { v as e } from "../../_includes/dester-inject-Math.mjs";
 
-import o from "../exp";
+import r from "../exp/index.mjs";
 
-var t = r.sinh || (r => (o(r) - o(-r)) / 2);
+var t = e.sinh || function(e) {
+    return (r(e) - r(-e)) / 2;
+};
 
 export { t as default };
