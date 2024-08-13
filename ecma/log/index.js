@@ -3,6 +3,6 @@ Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-var e = require("../../_includes/dester-inject-Math.js").v.log;
+var e = Math.log;
 
 exports.default = e;

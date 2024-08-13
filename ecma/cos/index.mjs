@@ -1,6 +1,4 @@
 /* eslint-disable */
-import { v as e } from "../../_includes/dester-inject-Math.mjs";
+var a = Math.cos;
 
-var s = e.cos;
-
-export { s as default };
+export { a as default };

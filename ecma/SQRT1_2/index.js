@@ -3,6 +3,6 @@ Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-var e = require("../../_includes/dester-inject-Math.js").v.SQRT1_2;
+var e = Math.SQRT1_2;
 
 exports.default = e;

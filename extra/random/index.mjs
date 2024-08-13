@@ -1,15 +1,13 @@
 /* eslint-disable */
-import n from "../../ecma/random/index.mjs";
+import _ from "../../ecma/random/index.mjs";
 
-import "../../_includes/dester-inject-Math.mjs";
-
-var r = function() {
-    function r() {
-        return n() || r();
+var n = function() {
+    function __random__() {
+        return _() || __random__();
     }
-    return function(n, t) {
-        return void 0 === n ? r() : void 0 === t ? r() * n : r() * (t - n) + n;
+    return function(_, n) {
+        return void 0 === _ ? __random__() : void 0 === n ? __random__() * _ : __random__() * (n - _) + +_;
     };
 }();
 
-export { r as default };
+export { n as default };

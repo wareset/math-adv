@@ -1,6 +1,6 @@
 /* eslint-disable */
-function t(t, e, n, r, u) {
-    return (+t - (e = +e)) * (+u - (r = +r)) / (+n - e) + r;
+function scale(e, a, t, c, l) {
+    return (+e - (a = +a)) * (+l - (c = +c)) / (+t - a) + c;
 }
 
-export { t as default };
+export { scale as default };

@@ -5,7 +5,6 @@ Object.defineProperty(exports, "__esModule", {
 
 const e = require("../RAD_PER_DEG/index.js");
 
-require("../../ecma/PI/index.js"), require("../../_includes/dester-inject-Math.js"), 
-exports.default = function(r) {
+require("../../ecma/PI/index.js"), exports.default = function degrees(r) {
     return r * e.default;
 };

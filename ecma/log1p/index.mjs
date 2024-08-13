@@ -1,10 +1,8 @@
 /* eslint-disable */
-import { v as e } from "../../_includes/dester-inject-Math.mjs";
+import e from "../log/index.mjs";
 
-import r from "../log/index.mjs";
-
-var t = e.log1p || function(e) {
-    return (e = +e) > -1e-8 && e < 1e-8 ? e - e * e / 2 : r(1 + e);
+var o = Math.log1p || function(o) {
+    return (o = +o) > -1e-8 && o < 1e-8 ? o - o * o / 2 : e(1 + o);
 };
 
-export { t as default };
+export { o as default };

@@ -1,10 +1,8 @@
 /* eslint-disable */
-import { v as e } from "../../_includes/dester-inject-Math.mjs";
-
 import r from "../exp/index.mjs";
 
-var t = e.cosh || function(e) {
-    return (r(e) + r(-e)) / 2;
+var t = Math.cosh || function(t) {
+    return (r(t) + r(-t)) / 2;
 };
 
 export { t as default };

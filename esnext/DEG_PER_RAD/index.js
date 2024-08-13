@@ -3,10 +3,6 @@ Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-const e = require("../../ecma/PI/index.js");
+var e = require("../../ecma/PI/index.js").default / 180;
 
-require("../../_includes/dester-inject-Math.js");
-
-var r = e.default / 180;
-
-exports.default = r;
+exports.default = e;

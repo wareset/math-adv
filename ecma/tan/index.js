@@ -3,6 +3,6 @@ Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-var e = require("../../_includes/dester-inject-Math.js").v.tan;
+var e = Math.tan;
 
 exports.default = e;

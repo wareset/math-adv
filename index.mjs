@@ -116,7 +116,3 @@ export { default as floorExtra } from "./extra/floor/index.mjs";
 export { default as randomExtra } from "./extra/random/index.mjs";
 
 export { default as roundExtra } from "./extra/round/index.mjs";
-
-import "./_includes/dester-inject-Math.mjs";
-
-import "./_includes/dester-inject-isFinite.mjs";

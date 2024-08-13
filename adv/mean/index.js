@@ -1,7 +1,7 @@
 /* eslint-disable */
 Object.defineProperty(exports, "__esModule", {
     value: !0
-}), exports.default = function() {
-    for (var e = +(arguments.length <= 0 ? void 0 : arguments[0]), t = arguments.length, o = 1; o < t; o++) e += +(o < 0 || arguments.length <= o ? void 0 : arguments[o]);
-    return e / t;
+}), exports.default = function mean(...e) {
+    for (var r = +e[0], t = e.length, n = 1; n < t; n++) r += +e[n];
+    return r / t;
 };

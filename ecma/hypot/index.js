@@ -3,12 +3,12 @@ Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-const e = require("../../_includes/dester-inject-Math.js"), r = require("../abs/index.js"), t = require("../sqrt/index.js");
+const e = require("../abs/index.js"), r = require("../sqrt/index.js");
 
-var n = e.v.hypot || function() {
-    for (var e, n, s = 0, u = 0, d = 0, i = arguments.length; d < i; d++) u < (e = r.default(+(d < 0 || arguments.length <= d ? void 0 : arguments[d]))) ? (s = s * (n = u / e) * n + 1, 
-    u = e) : s += e > 0 ? (n = e / u) * n : e;
-    return u === 1 / 0 ? u : u * t.default(s);
+var t = Math.hypot || function(...t) {
+    for (var u, a, n = 0, o = 0, s = 0, d = t.length; s < d; s++) o < (u = e.default(+t[s])) ? (n = n * (a = o / u) * a + 1, 
+    o = u) : n += u > 0 ? (a = u / o) * a : u;
+    return o === 1 / 0 ? o : o * r.default(n);
 };
 
-exports.default = n;
+exports.default = t;

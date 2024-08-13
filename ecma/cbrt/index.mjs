@@ -1,12 +1,8 @@
 /* eslint-disable */
-import { v as t } from "../../_includes/dester-inject-isFinite.mjs";
+import t from "../pow/index.mjs";
 
-import { v as e } from "../../_includes/dester-inject-Math.mjs";
-
-import r from "../pow/index.mjs";
-
-var i = e.cbrt || function(e) {
-    return t(e = +e) && 0 !== e ? e > 0 ? r(e, 1 / 3) : -r(-e, 1 / 3) : e;
+var r = Math.cbrt || function(r) {
+    return isFinite(r = +r) && 0 !== r ? r > 0 ? t(r, 1 / 3) : -t(-r, 1 / 3) : r;
 };
 
-export { i as default };
+export { r as default };

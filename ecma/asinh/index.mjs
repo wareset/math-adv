@@ -1,14 +1,10 @@
 /* eslint-disable */
-import { v as i } from "../../_includes/dester-inject-isFinite.mjs";
+import i from "../log/index.mjs";
 
-import { v as r } from "../../_includes/dester-inject-Math.mjs";
+import r from "../sqrt/index.mjs";
 
-import t from "../log/index.mjs";
-
-import e from "../sqrt/index.mjs";
-
-var s = r.asinh || function(r) {
-    return i(r = +r) && 0 !== r ? r < 0 ? -s(-r) : t(r + e(r * r + 1)) : r;
+var t = Math.asinh || function(n) {
+    return isFinite(n = +n) && 0 !== n ? n < 0 ? -t(-n) : i(n + r(n * n + 1)) : n;
 };
 
-export { s as default };
+export { t as default };

@@ -1,6 +1,6 @@
 /* eslint-disable */
-function t(t, e, n) {
-    return (t = +t) < e ? e : t > n ? n : t;
+function clamp(a, t, c) {
+    return (a = +a) < t ? +t : a > c ? +c : a;
 }
 
-export { t as default };
+export { clamp as default };

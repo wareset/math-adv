@@ -1,6 +1,4 @@
 /* eslint-disable */
-import { v as a } from "../../_includes/dester-inject-Math.mjs";
+var a = Math.max;
 
-var e = a.max;
-
-export { e as default };
+export { a as default };

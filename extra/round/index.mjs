@@ -1,12 +1,10 @@
 /* eslint-disable */
-import e from "../../ecma/pow/index.mjs";
+import o from "../../ecma/pow/index.mjs";
 
-import m from "../../ecma/round/index.mjs";
+import r from "../../ecma/round/index.mjs";
 
-import "../../_includes/dester-inject-Math.mjs";
-
-function r(r, t) {
-    return t ? m(r * (t = e(10, t))) / t : m(r);
+function roundTo(m, n) {
+    return n ? r(m * (n = o(10, n))) / n : r(m);
 }
 
-export { r as default };
+export { roundTo as default };

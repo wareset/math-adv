@@ -1,6 +1,4 @@
 /* eslint-disable */
-import { v as t } from "../../_includes/dester-inject-Math.mjs";
-
-var a = t.tan;
+var a = Math.tan;
 
 export { a as default };

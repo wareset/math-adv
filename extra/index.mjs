@@ -9,8 +9,6 @@ export { default as roundExtra } from "./round/index.mjs";
 
 import "../ecma/pow/index.mjs";
 
-import "../_includes/dester-inject-Math.mjs";
-
 import "../ecma/ceil/index.mjs";
 
 import "../ecma/floor/index.mjs";

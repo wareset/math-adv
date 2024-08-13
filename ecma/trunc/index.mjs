@@ -1,12 +1,10 @@
 /* eslint-disable */
-import { v as r } from "../../_includes/dester-inject-Math.mjs";
+import r from "../ceil/index.mjs";
 
-import t from "../ceil/index.mjs";
+import o from "../floor/index.mjs";
 
-import e from "../floor/index.mjs";
-
-var o = r.trunc || function(r) {
-    return (r > 0 ? e : t)(r);
+var t = Math.trunc || function(t) {
+    return (t > 0 ? o : r)(t);
 };
 
-export { o as default };
+export { t as default };

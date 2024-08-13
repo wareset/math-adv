@@ -3,10 +3,10 @@ Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-const e = require("../../_includes/dester-inject-Math.js"), r = require("../ceil/index.js"), t = require("../floor/index.js");
+const e = require("../ceil/index.js"), r = require("../floor/index.js");
 
-var u = e.v.trunc || function(e) {
-    return (e > 0 ? t.default : r.default)(e);
+var t = Math.trunc || function(t) {
+    return (t > 0 ? r.default : e.default)(t);
 };
 
-exports.default = u;
+exports.default = t;

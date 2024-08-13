@@ -1,12 +1,10 @@
 /* eslint-disable */
-import { v as r } from "../../_includes/dester-inject-Math.mjs";
-
 import o from "../LOG10E/index.mjs";
 
-import t from "../log/index.mjs";
+import r from "../log/index.mjs";
 
-var e = r.log10 || function(r) {
-    return t(+r) * o;
+var t = Math.log10 || function(t) {
+    return r(+t) * o;
 };
 
-export { e as default };
+export { t as default };

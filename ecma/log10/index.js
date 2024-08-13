@@ -3,10 +3,10 @@ Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-const e = require("../../_includes/dester-inject-Math.js"), r = require("../LOG10E/index.js"), t = require("../log/index.js");
+const e = require("../LOG10E/index.js"), r = require("../log/index.js");
 
-var u = e.v.log10 || function(e) {
-    return t.default(+e) * r.default;
+var t = Math.log10 || function(t) {
+    return r.default(+t) * e.default;
 };
 
-exports.default = u;
+exports.default = t;

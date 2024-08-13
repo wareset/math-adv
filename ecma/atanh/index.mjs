@@ -1,10 +1,8 @@
 /* eslint-disable */
-import { v as t } from "../../_includes/dester-inject-Math.mjs";
+import t from "../log/index.mjs";
 
-import r from "../log/index.mjs";
-
-var e = t.atanh || function(t) {
-    return (t = +t) ? r((1 + t) / (1 - t)) / 2 : t;
+var a = Math.atanh || function(a) {
+    return (a = +a) ? t((1 + a) / (1 - a)) / 2 : a;
 };
 
-export { e as default };
+export { a as default };

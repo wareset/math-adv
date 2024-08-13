@@ -3,16 +3,14 @@ Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-const e = require("../../ecma/random/index.js");
-
-require("../../_includes/dester-inject-Math.js");
+const _ = require("../../ecma/random/index.js");
 
 var r = function() {
-    function r() {
-        return e.default() || r();
+    function __random__() {
+        return _.default() || __random__();
     }
-    return function(e, t) {
-        return void 0 === e ? r() : void 0 === t ? r() * e : r() * (t - e) + e;
+    return function(_, r) {
+        return void 0 === _ ? __random__() : void 0 === r ? __random__() * _ : __random__() * (r - _) + +_;
     };
 }();
 

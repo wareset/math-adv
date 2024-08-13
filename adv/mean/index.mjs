@@ -1,7 +1,7 @@
 /* eslint-disable */
-function t() {
-    for (var t = +(arguments.length <= 0 ? void 0 : arguments[0]), e = arguments.length, n = 1; n < e; n++) t += +(n < 0 || arguments.length <= n ? void 0 : arguments[n]);
-    return t / e;
+function mean(...e) {
+    for (var n = +e[0], a = e.length, r = 1; r < a; r++) n += +e[r];
+    return n / a;
 }
 
-export { t as default };
+export { mean as default };

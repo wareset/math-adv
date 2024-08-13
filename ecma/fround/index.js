@@ -3,18 +3,20 @@ Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-const e = require("../../_includes/dester-inject-Math.js"), r = require("../pow/index.js"), n = require("../sign/index.js");
+const e = require("../pow/index.js"), n = require("../sign/index.js");
 
-var t = e.v.fround || function(e, r) {
-    var n, t, u, i;
-    var d = !1;
-    return function(o) {
-        d || (d = !0, n = e(2, -52), t = e(2, -23), u = e(2, 127) * (2 - t), i = e(2, -126));
-        var s, a, f = r(o = +o), c = o * f;
-        return c < i ? f * function(e) {
-            return e + 1 / n - 1 / n;
-        }(c / i / t) * i * t : (a = (s = (1 + t / n) * c) - (s - c)) > u || a != a ? f * (1 / 0) : f * a;
+var r = Math.fround || function(e, n) {
+    var r, t, u, i;
+    var o = !1;
+    return function(a) {
+        o || function init() {
+            o = !0, r = e(2, -52), t = e(2, -23), u = e(2, 127) * (2 - t), i = e(2, -126);
+        }();
+        var d, f, s = n(a = +a), c = a * s;
+        return c < i ? s * function roundTiesToEven(e) {
+            return e + 1 / r - 1 / r;
+        }(c / i / t) * i * t : (f = (d = (1 + t / r) * c) - (d - c)) > u || f != f ? s * (1 / 0) : s * f;
     };
-}(r.default, n.default);
+}(e.default, n.default);
 
-exports.default = t;
+exports.default = r;

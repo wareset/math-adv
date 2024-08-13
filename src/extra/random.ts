@@ -9,7 +9,7 @@ const randomBetween = (function() {
       ? __random__()
       : max === void 0
         ? __random__() * min
-        : __random__() * (max - min) + min
+        : __random__() * (max - min) + +min
   }
 })()
 export default randomBetween

@@ -5,6 +5,6 @@ Object.defineProperty(exports, "__esModule", {
 
 const e = require("../../ecma/pow/index.js"), r = require("../../ecma/round/index.js");
 
-require("../../_includes/dester-inject-Math.js"), exports.default = function(t, u) {
-    return u ? r.default(t * (u = e.default(10, u))) / u : r.default(t);
+exports.default = function roundTo(u, t) {
+    return t ? r.default(u * (t = e.default(10, t))) / t : r.default(u);
 };

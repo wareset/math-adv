@@ -1,8 +1,6 @@
 /* eslint-disable */
-import e from "../../ecma/PI/index.mjs";
+import a from "../../ecma/PI/index.mjs";
 
-import "../../_includes/dester-inject-Math.mjs";
+var e = a / 180;
 
-var t = e / 180;
-
-export { t as default };
+export { e as default };

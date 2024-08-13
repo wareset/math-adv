@@ -3,11 +3,11 @@ Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-const e = require("../../_includes/dester-inject-Math.js"), t = require("../exp/index.js"), r = require("../expm1/index.js");
+const e = require("../exp/index.js"), t = require("../expm1/index.js");
 
-var u = e.v.tanh || function(e) {
-    var u, d;
-    return (u = r.default(e = +e)) === 1 / 0 ? 1 : (d = r.default(-e)) === 1 / 0 ? -1 : (u - d) / (t.default(e) + t.default(-e));
+var r = Math.tanh || function(r) {
+    var u, a;
+    return (u = t.default(r = +r)) === 1 / 0 ? 1 : (a = t.default(-r)) === 1 / 0 ? -1 : (u - a) / (e.default(r) + e.default(-r));
 };
 
-exports.default = u;
+exports.default = r;

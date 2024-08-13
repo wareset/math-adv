@@ -84,7 +84,3 @@ export { default as tan } from "./tan/index.mjs";
 export { default as tanh } from "./tanh/index.mjs";
 
 export { default as trunc } from "./trunc/index.mjs";
-
-import "../_includes/dester-inject-Math.mjs";
-
-import "../_includes/dester-inject-isFinite.mjs";

@@ -15,8 +15,6 @@ export { default as scale } from "./scale/index.mjs";
 
 import "../ecma/PI/index.mjs";
 
-import "../_includes/dester-inject-Math.mjs";
-
 import "../ecma/fround/index.mjs";
 
 import "../ecma/pow/index.mjs";

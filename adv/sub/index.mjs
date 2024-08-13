@@ -1,7 +1,7 @@
 /* eslint-disable */
-function t() {
-    for (var t = +(arguments.length <= 0 ? void 0 : arguments[0]), e = 1, n = arguments.length; e < n; e++) t -= +(e < 0 || arguments.length <= e ? void 0 : arguments[e]);
+function sub(...r) {
+    for (var t = +r[0], u = 1, e = r.length; u < e; u++) t -= +r[u];
     return t;
 }
 
-export { t as default };
+export { sub as default };

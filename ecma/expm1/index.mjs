@@ -1,10 +1,8 @@
 /* eslint-disable */
-import { v as e } from "../../_includes/dester-inject-Math.mjs";
+import e from "../exp/index.mjs";
 
-import r from "../exp/index.mjs";
-
-var t = e.expm1 || function(e) {
-    return (e = +e) ? e > -1e-6 && e < 1e-6 ? e + e * e / 2 : r(e) - 1 : e;
+var r = Math.expm1 || function(r) {
+    return (r = +r) ? r > -1e-6 && r < 1e-6 ? r + r * r / 2 : e(r) - 1 : r;
 };
 
-export { t as default };
+export { r as default };

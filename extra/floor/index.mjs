@@ -1,12 +1,10 @@
 /* eslint-disable */
-import e from "../../ecma/pow/index.mjs";
+import o from "../../ecma/pow/index.mjs";
 
-import m from "../../ecma/floor/index.mjs";
+import r from "../../ecma/floor/index.mjs";
 
-import "../../_includes/dester-inject-Math.mjs";
-
-function o(o, r) {
-    return r ? m(o * (r = e(10, r))) / r : m(o);
+function floorTo(m, e) {
+    return e ? r(m * (e = o(10, e))) / e : r(m);
 }
 
-export { o as default };
+export { floorTo as default };

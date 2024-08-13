@@ -5,6 +5,6 @@ Object.defineProperty(exports, "__esModule", {
 
 const e = require("../../ecma/pow/index.js"), t = require("../../ecma/ceil/index.js");
 
-require("../../_includes/dester-inject-Math.js"), exports.default = function(r, u) {
+exports.default = function ceilTo(r, u) {
     return u ? t.default(r * (u = e.default(10, u))) / u : t.default(r);
 };

@@ -3,10 +3,10 @@ Object.defineProperty(exports, "__esModule", {
     value: !0
 });
 
-const e = require("../../_includes/dester-inject-Math.js"), t = require("../log/index.js");
+const e = require("../log/index.js");
 
-var r = e.v.atanh || function(e) {
-    return (e = +e) ? t.default((1 + e) / (1 - e)) / 2 : e;
+var t = Math.atanh || function(t) {
+    return (t = +t) ? e.default((1 + t) / (1 - t)) / 2 : t;
 };
 
-exports.default = r;
+exports.default = t;

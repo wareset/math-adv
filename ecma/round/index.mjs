@@ -1,6 +1,4 @@
 /* eslint-disable */
-import { v as e } from "../../_includes/dester-inject-Math.mjs";
+var a = Math.round;
 
-var r = e.round;
-
-export { r as default };
+export { a as default };

@@ -3,14 +3,12 @@ import e from "../scale/index.mjs";
 
 import m from "../../ecma/fround/index.mjs";
 
-import "../../_includes/dester-inject-Math.mjs";
-
 import "../../ecma/pow/index.mjs";
 
 import "../../ecma/sign/index.mjs";
 
-function i(i, r, t, n, o) {
-    return m(e(i, r, t, n, o));
+function fscale(i, o, r, n, s) {
+    return m(e(i, o, r, n, s));
 }
 
-export { i as default };
+export { fscale as default };

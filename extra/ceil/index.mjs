@@ -1,12 +1,10 @@
 /* eslint-disable */
 import e from "../../ecma/pow/index.mjs";
 
-import m from "../../ecma/ceil/index.mjs";
+import o from "../../ecma/ceil/index.mjs";
 
-import "../../_includes/dester-inject-Math.mjs";
-
-function t(t, i) {
-    return i ? m(t * (i = e(10, i))) / i : m(t);
+function ceilTo(i, m) {
+    return m ? o(i * (m = e(10, m))) / m : o(i);
 }
 
-export { t as default };
+export { ceilTo as default };

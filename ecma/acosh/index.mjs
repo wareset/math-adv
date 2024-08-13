@@ -1,16 +1,14 @@
 /* eslint-disable */
-import { v as r } from "../../_includes/dester-inject-Math.mjs";
+import o from "../LN2/index.mjs";
 
-import m from "../LN2/index.mjs";
+import r from "../log/index.mjs";
 
-import o from "../log/index.mjs";
+import m from "../sqrt/index.mjs";
 
-import t from "../sqrt/index.mjs";
+import t from "../log1p/index.mjs";
 
-import i from "../log1p/index.mjs";
-
-var e = r.acosh || function(r) {
-    return (r = +r) < 1 ? NaN : r > 94906265.62425156 ? o(r) + m : i(r - 1 + t(r - 1) * t(r + 1));
+var i = Math.acosh || function(i) {
+    return (i = +i) < 1 ? NaN : i > 94906265.62425156 ? r(i) + o : t(i - 1 + m(i - 1) * m(i + 1));
 };
 
-export { e as default };
+export { i as default };

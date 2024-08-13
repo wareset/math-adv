@@ -1,6 +1,4 @@
 /* eslint-disable */
-import { v as a } from "../../_includes/dester-inject-Math.mjs";
+var a = Math.abs;
 
-var e = a.abs;
-
-export { e as default };
+export { a as default };
